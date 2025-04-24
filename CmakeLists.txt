@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.31)
 
 project(OpenGl)
+
 set(CMAKE_CXX_COMPILER g++)
 set(CMAKE_C_COMPILER gcc)
 # Specify the C++ standard
