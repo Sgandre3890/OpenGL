@@ -1,7 +1,6 @@
-#include <glad\glad.h>
-#include <GLFW\glfw3.h>
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
 #include <iostream>
-
 using namespace std;
 
 
@@ -29,8 +28,6 @@ int main()
 
     glfwMakeContextCurrent(window);
     glViewport(0, 0, 800, 600);
-
-    while (!glfwWindowShouldClose(window))
 
     return 0;
 }
