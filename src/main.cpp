@@ -6,28 +6,41 @@ using namespace std;
 
 int main()
 {
+    //Initialize
     glfwInit();
-    cout << "GLFW initialized" << endl;
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
+    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3); //Set Version
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE); //Use core version of OpenGL
+    glfwWindowHint(GLFW_OPENGL_DEBUG_CONTEXT, GL_TRUE);
+    glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); //FOR MACOS
+    glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
 
-    if(!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
-    {
-        std::cout << "Failed to initialize GLAD" << std::endl;
-        return -1;
-    }
-
-    GLFWwindow* window = glfwCreateWindow(800, 600, "OpenGL", NULL, NULL);
-    if (window == NULL)
-    {
-        std::cout << "Failed to create GLFW window" << std::endl;
+    //Create GLFW window
+    GLFWwindow* window = glfwCreateWindow(800, 600, "Block Scape", NULL, NULL); //Size, title, monitor, shared recourses
+    if (window == NULL) {
+        cout << "Failed to create GLFW window" << endl;
         glfwTerminate();
         return -1;
     }
-
     glfwMakeContextCurrent(window);
+
+
+    //Initialize GLAD
+    if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
+        cout << "Failed to initialize GLAD" << endl;
+        return -1;
+    }
+
     glViewport(0, 0, 800, 600);
+
+    while(!glfwWindowShouldClose(window)) {
+        if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
+            glfwSetWindowShouldClose(window, true);
+        }
+
+        glfwSwapBuffers(window);
+        glfwPollEvents();
+    }
 
     return 0;
 }
