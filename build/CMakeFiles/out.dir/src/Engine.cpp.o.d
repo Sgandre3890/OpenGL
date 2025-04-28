@@ -1,5 +1,6 @@
-CMakeFiles/out.dir/src/main.cpp.o: \
-  /Users/9606164/Documents/GitHub/OpenGL/src/main.cpp \
+CMakeFiles/out.dir/src/Engine.cpp.o: \
+  /Users/9606164/Documents/GitHub/OpenGL/src/Engine.cpp \
+  /Users/9606164/Documents/GitHub/OpenGL/src/Engine.h \
   /Users/9606164/Documents/GitHub/OpenGL/include/glad/glad.h \
   /Users/9606164/Documents/GitHub/OpenGL/include/KHR/khrplatform.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stdint.h \
@@ -793,5 +794,4 @@ CMakeFiles/out.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdarg \
-  /Users/9606164/Documents/GitHub/OpenGL/src/Engine.h
+  /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/cstdarg

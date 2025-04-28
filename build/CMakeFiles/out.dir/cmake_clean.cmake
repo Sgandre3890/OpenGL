@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "/Users/9606164/Documents/GitHub/OpenGL/out"
   "/Users/9606164/Documents/GitHub/OpenGL/out.pdb"
+  "CMakeFiles/out.dir/src/Engine.cpp.o"
+  "CMakeFiles/out.dir/src/Engine.cpp.o.d"
   "CMakeFiles/out.dir/src/main.cpp.o"
   "CMakeFiles/out.dir/src/main.cpp.o.d"
 )
