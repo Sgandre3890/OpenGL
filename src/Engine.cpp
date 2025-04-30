@@ -46,7 +46,7 @@ namespace Engine {
 		// #ifdef __APPLE__
 		// 	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 		// #endif
-
+		
 		return 0;
 	}
 
@@ -55,7 +55,10 @@ namespace Engine {
 			if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
 				glfwSetWindowShouldClose(window, true);
 			}
-			glfwSwapBuffers(window);
+			glClearColor(0.2f, 0.3f, 0.3f, 1.0f); // sets the background color
+			glClear(GL_COLOR_BUFFER_BIT); // clears the screen
+			
+			glfwSwapBuffers(window); //swap front and back buffers
 			glfwPollEvents();
 		}
 	}
