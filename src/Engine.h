@@ -7,6 +7,12 @@
 
 using namespace std;
 
+namespace Renderer {
+	void render();
+	extern float vertices[];
+
+}
+
 namespace Engine {
 	extern GLFWwindow* window;
 	extern int width, height;

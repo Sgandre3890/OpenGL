@@ -1,4 +1,23 @@
 #include "Engine.h"
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
+
+namespace Renderer {
+	void render () {
+		glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+		glClear(GL_COLOR_BUFFER_BIT);
+	}
+	
+	float vertices[] = {
+		-0.5f, -0.5f, 0.0f,
+		0.5f, -0.5f, 0.0f,
+		0.0f, 0.5f, 0.0f
+	};
+}
+
+
+
+
 
 namespace {
 	void windowResizeCallback(GLFWwindow* window, int width, int height) { //for when the window gets resized
@@ -55,9 +74,8 @@ namespace Engine {
 			if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
 				glfwSetWindowShouldClose(window, true);
 			}
-			glClearColor(0.2f, 0.3f, 0.3f, 1.0f); // sets the background color
-			glClear(GL_COLOR_BUFFER_BIT); // clears the screen
 			
+			Renderer::render();
 			glfwSwapBuffers(window); //swap front and back buffers
 			glfwPollEvents();
 		}
