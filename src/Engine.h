@@ -16,6 +16,7 @@ namespace Renderer {
 namespace Engine {
 	extern GLFWwindow* window;
 	extern int width, height;
+	extern int Cwidth, Cheight;
 	
 	int init(int width, int height); 
 	void loop();
