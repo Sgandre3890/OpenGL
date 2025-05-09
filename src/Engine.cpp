@@ -30,7 +30,7 @@ namespace {
 namespace Engine {
     GLFWwindow* window;
 	int width,height;
-	int init(int ScreenW, int ScreenH) {
+	int init(int width, int height) {
 		//Initialize
 		glfwInit();
 		glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3); //Set Version
