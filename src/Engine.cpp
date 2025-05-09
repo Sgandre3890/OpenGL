@@ -30,7 +30,7 @@ namespace {
 namespace Engine {
     GLFWwindow* window;
 	int width,height;
-	int init(int ScreenW, int ScreenH) {
+	int init(int width, int height) {
 		//Initialize
 		glfwInit();
 		glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3); //Set Version
@@ -41,7 +41,7 @@ namespace Engine {
 		glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
 
 		//Create GLFW window
-		window = glfwCreateWindow(ScreenW, ScreenH, "OpenGL", NULL, NULL); //Size, title, monitor, shared recourses
+		window = glfwCreateWindow(width, height, "OpenGL", NULL, NULL); //Size, title, monitor, shared recourses
 		if (window == NULL) {
 			cout << "Failed to create GLFW window" << endl;
 			glfwTerminate();

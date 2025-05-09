@@ -17,7 +17,7 @@ namespace Engine {
 	extern GLFWwindow* window;
 	extern int width, height;
 	
-	int init(int ScreenW, int ScreenH); 
+	int init(int width, int height); 
 	void loop();
 }
 
