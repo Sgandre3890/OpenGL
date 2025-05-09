@@ -29,7 +29,7 @@ namespace {
 
 namespace Engine {
     GLFWwindow* window;
-	int width,height,Cwidth=800,Cheight=600;
+	int width=800,height=600,Cwidth=0,Cheight=0;
 	int init(int width, int height) {
 		//Initialize
 		glfwInit();
@@ -49,7 +49,6 @@ namespace Engine {
 		}
 		glfwMakeContextCurrent(window);
 
-
 		//Initialize GLAD
 		if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress)) {
 			cout << "Failed to initialize GLAD" << endl;
@@ -62,9 +61,9 @@ namespace Engine {
 		Engine::height = height;
 		glfwSetFramebufferSizeCallback(window,windowResizeCallback); //assigns resize callback function
 
-		// #ifdef __APPLE__
-		// 	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
-		// #endif
+		#ifdef __APPLE__
+		glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+		#endif
 		
 		return 0;
 	}
