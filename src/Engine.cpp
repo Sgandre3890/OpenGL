@@ -30,7 +30,7 @@ namespace {
 
 namespace Engine {
     GLFWwindow* window;
-	int width=800,height=600,Cwidth=0,Cheight=0;
+	int width=800,height=600,CAM_WIDTH=800,CAM_HEIGHT=600;
 	int init(int width, int height) {
 		//Initialize
 		glfwInit();
@@ -57,7 +57,7 @@ namespace Engine {
 		}
 
 		//Sets GL Viewport (camera)
-		glViewport(0, 0, Cwidth, Cheight);
+		glViewport(0, 0, CAM_WIDTH, CAM_HEIGHT);
 		Engine::width = width;
 		Engine::height = height;
 		glfwSetFramebufferSizeCallback(window,windowResizeCallback); //assigns resize callback function
