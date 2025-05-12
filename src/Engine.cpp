@@ -16,22 +16,18 @@ namespace Renderer {
 	}
 }
 
-
-
-
-
 namespace {
 	void windowResizeCallback(GLFWwindow* window, int width, int height) { //for when the window gets resized
 		glViewport(0, 0, width, height);
-		Engine::width = width;
-		Engine::height = height;
+		Engine::SCR_WIDTH = Engine::SCR_WIDTH;
+		Engine::SCR_HEIGHT = Engine::SCR_HEIGHT;
 	}
 }
 
 namespace Engine {
     GLFWwindow* window;
-	int width=800,height=600,CAM_WIDTH=800,CAM_HEIGHT=600;
-	int init(int width, int height) {
+	int SCR_WIDTH=800,SCR_HEIGHT=800,CAM_WIDTH=800,CAM_HEIGHT=600;
+	int init(int SCR_WIDTH, int SCR_HEIGHT) {
 		//Initialize
 		glfwInit();
 		glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3); //Set Version
@@ -42,7 +38,7 @@ namespace Engine {
 		glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);
 
 		//Create GLFW window
-		window = glfwCreateWindow(width, height, "OpenGL", NULL, NULL); //Size, title, monitor, shared recourses
+		window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "OpenGL", NULL, NULL); //Size, title, monitor, shared recourses
 		if (window == NULL) {
 			cout << "Failed to create GLFW window" << endl;
 			glfwTerminate();
@@ -58,8 +54,8 @@ namespace Engine {
 
 		//Sets GL Viewport (camera)
 		glViewport(0, 0, CAM_WIDTH, CAM_HEIGHT);
-		Engine::width = width;
-		Engine::height = height;
+		Engine::SCR_WIDTH = SCR_WIDTH; Engine::SCR_HEIGHT = SCR_HEIGHT;
+		Engine::CAM_WIDTH = CAM_WIDTH; Engine::CAM_HEIGHT = CAM_HEIGHT;
 		glfwSetFramebufferSizeCallback(window,windowResizeCallback); //assigns resize callback function
 
 		#ifdef __APPLE__

@@ -15,10 +15,10 @@ namespace Renderer {
 
 namespace Engine {
 	extern GLFWwindow* window;
-	extern int width, height;
-	extern int Cwidth, Cheight;
+	extern int SCR_WIDTH, SCR_HEIGHT;
+	extern int CAM_WIDTH, CAM_HEIGHT;
 	
-	int init(int width, int height); 
+	int init(int SCR_WIDTH, int SCR_HEIGHT); 
 	void loop();
 }
 
