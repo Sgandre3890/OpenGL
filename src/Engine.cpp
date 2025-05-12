@@ -17,7 +17,7 @@ namespace Renderer {
 }
 
 namespace {
-	void windowResizeCallback(GLFWwindow* window, int width, int height) { //for when the window gets resized
+	void windowResizeCallback(GLFWwindow* window, int SCR_WIDTH, int SCR_HEIGHT) { //for when the window gets resized
 		glViewport(0, 0, Engine::SCR_WIDTH, Engine::SCR_HEIGHT);
 		Engine::SCR_WIDTH = Engine::SCR_WIDTH;
 		Engine::SCR_HEIGHT = Engine::SCR_HEIGHT;
