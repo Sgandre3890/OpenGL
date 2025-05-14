@@ -8,7 +8,7 @@
 using namespace std;
 
 namespace Renderer {
-	void render();
+	void color();
 	extern float vertices[];
 
 }
