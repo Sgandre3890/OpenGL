@@ -84,12 +84,12 @@ clean: CMakeFiles/out.dir/clean
 CMakeFiles/out.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=1,2 "Built target out"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=1,2,3 "Built target out"
 .PHONY : CMakeFiles/out.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/out.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/out.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles 0
 .PHONY : CMakeFiles/out.dir/rule
@@ -101,7 +101,7 @@ out: CMakeFiles/out.dir/rule
 # codegen rule for target.
 CMakeFiles/out.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=1,2 "Finished codegen for target out"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=1,2,3 "Finished codegen for target out"
 .PHONY : CMakeFiles/out.dir/codegen
 
 # clean rule for target.

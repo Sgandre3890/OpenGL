@@ -4,5 +4,11 @@
   "command": "g++  @CMakeFiles/out.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\out.dir\\src\\main.cpp.obj -c C:\\Users\\sgand\\OneDrive\\Documents\\GitHub\\OpenGL\\src\\main.cpp",
   "file": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/main.cpp",
   "output": "CMakeFiles/out.dir/src/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/build",
+  "command": "g++  @CMakeFiles/out.dir/includes_CXX.rsp -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\out.dir\\src\\window.cpp.obj -c C:\\Users\\sgand\\OneDrive\\Documents\\GitHub\\OpenGL\\src\\window.cpp",
+  "file": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/window.cpp",
+  "output": "CMakeFiles/out.dir/src/window.cpp.obj"
 }
 ]

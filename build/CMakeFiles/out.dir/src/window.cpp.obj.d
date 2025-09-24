@@ -1,5 +1,5 @@
-CMakeFiles/out.dir/src/main.cpp.obj: \
- C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\main.cpp \
+CMakeFiles/out.dir/src/window.cpp.obj: \
+ C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\window.cpp \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glad/glad.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/KHR/khrplatform.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
@@ -12,6 +12,7 @@ CMakeFiles/out.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
  C:/msys64/ucrt64/include/stddef.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/GLFW/glfw3.h \
+ C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\window.h \
  C:/msys64/ucrt64/include/c++/14.2.0/iostream \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
  C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -141,21 +142,4 @@ CMakeFiles/out.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/basic_ios.tcc \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/ostream.tcc \
  C:/msys64/ucrt64/include/c++/14.2.0/istream \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/istream.tcc \
- C:/msys64/ucrt64/include/c++/14.2.0/cmath \
- C:/msys64/ucrt64/include/math.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/specfun.h \
- C:/msys64/ucrt64/include/c++/14.2.0/limits \
- C:/msys64/ucrt64/include/c++/14.2.0/tr1/gamma.tcc \
- C:/msys64/ucrt64/include/c++/14.2.0/tr1/special_function_util.h \
- C:/msys64/ucrt64/include/c++/14.2.0/tr1/bessel_function.tcc \
- C:/msys64/ucrt64/include/c++/14.2.0/tr1/beta_function.tcc \
- C:/msys64/ucrt64/include/c++/14.2.0/tr1/ell_integral.tcc \
- C:/msys64/ucrt64/include/c++/14.2.0/tr1/exp_integral.tcc \
- C:/msys64/ucrt64/include/c++/14.2.0/tr1/hypergeometric.tcc \
- C:/msys64/ucrt64/include/c++/14.2.0/tr1/legendre_function.tcc \
- C:/msys64/ucrt64/include/c++/14.2.0/tr1/modified_bessel_func.tcc \
- C:/msys64/ucrt64/include/c++/14.2.0/tr1/poly_hermite.tcc \
- C:/msys64/ucrt64/include/c++/14.2.0/tr1/poly_laguerre.tcc \
- C:/msys64/ucrt64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
- C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\window.h
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/istream.tcc
