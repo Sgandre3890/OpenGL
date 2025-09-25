@@ -167,6 +167,7 @@ CMakeFiles/out.dir/src/main.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/Op
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
+  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/shader.h \
   C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/window.h
 
 CMakeFiles/out.dir/src/window.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/window.cpp \
@@ -581,6 +582,8 @@ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/window.cpp:
 C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h:
 
 C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h:
+
+C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/shader.h:
 
 C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h:
 

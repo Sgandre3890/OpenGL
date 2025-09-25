@@ -250,6 +250,9 @@ OpenGl_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 OpenGl_SOURCE_DIR:STATIC=C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL
 
+//The directory containing a CMake configuration file for shaderc.
+shaderc_DIR:PATH=shaderc_DIR-NOTFOUND
+
 
 ########################
 # INTERNAL cache entries
