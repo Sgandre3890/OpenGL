@@ -48,10 +48,17 @@ Shader::Shader(const char* vertexPath, const char* fragmentPath) {
     }
 
     // shader program
+    // create a new shader program object
     ID = glCreateProgram();
+
+    // attach the vertex shader and fragment shader to the program
     glAttachShader(ID, vertex);
     glAttachShader(ID, fragment);
+
+    // link the program (i.e. make it ready for use)
     glLinkProgram(ID);
+
+    // check if the linking was successful
     glGetProgramiv(ID, GL_LINK_STATUS, &success);
     if (!success) {
         glGetProgramInfoLog(ID, 512, NULL, infoLog);

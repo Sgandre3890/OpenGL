@@ -10,11 +10,11 @@ const unsigned int SCR_HEIGHT = 600;
 
 int main()
 {
-    if (Window::initializeWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL") != 0)
+    if (Window::initializeWindow(SCR_WIDTH, SCR_HEIGHT, "OpenGL") != 0)
         return -1;
 
     // Load shaders from files
-    Shader shader("../shaders/shader.vs", "../shaders/shader.fs");
+    Shader shader("include/shaders/vertShader.glsl", "include/shaders/fragShader.glsl");
 
     // Vertex data
     float vertices[] = {
@@ -38,23 +38,28 @@ int main()
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindVertexArray(0);
 
-    // Render loop
+    // Main loop: handles rendering and event processing until the window is closed
     while (!glfwWindowShouldClose(Window::window))
     {
+        // Process user input
         Window::processInput(Window::window);
 
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+        // Clear the screen and set the draw color
+        glClearColor(0.2f, 0.3f, 0.6f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        shader.use();
+        // Use the shader program
+        Shader shader("vertex.glsl", "fragment.glsl");
+        shader.use();  // probably defined in shader.h
+        shader.setFloat("someUniform", 1.0f);
+        shader.setVec4("color", 1.0f, 0.5f, 0.2f, 1.0f);
 
-        float timeValue = glfwGetTime();
-        float greenValue = (sin(timeValue) / 2.0f) + 0.5f;
-        shader.setVec4("ourColor", 0.0f, greenValue, 0.0f, 1.0f);
 
+        // Bind the vertex array object and draw the triangle
         glBindVertexArray(VAO);
         glDrawArrays(GL_TRIANGLES, 0, 3);
 
+        // Swap the front and back buffers and poll for events
         glfwSwapBuffers(Window::window);
         glfwPollEvents();
     }

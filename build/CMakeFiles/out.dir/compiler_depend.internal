@@ -173,6 +173,7 @@ CMakeFiles/out.dir/src/main.cpp.obj
 
 CMakeFiles/out.dir/src/shader.cpp.obj
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/shader.cpp
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/GLFW/glfw3.h
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/KHR/khrplatform.h
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glad/glad.h
  C:/msys64/ucrt64/include/_mingw.h
