@@ -14,7 +14,7 @@ int main()
         return -1;
 
     // Load shaders from files
-    Shader shader("include/shaders/vertShader.glsl", "include/shaders/fragShader.glsl");
+    Shader shader("include/shaders/vertex.glsl", "include/shaders/fragment.glsl");
 
     // Vertex data
     float vertices[] = {
@@ -48,12 +48,6 @@ int main()
         glClearColor(0.2f, 0.3f, 0.6f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        // Use the shader program
-        Shader shader("vertex.glsl", "fragment.glsl");
-        shader.use();  // probably defined in shader.h
-        shader.setFloat("someUniform", 1.0f);
-        shader.setVec4("color", 1.0f, 0.5f, 0.2f, 1.0f);
-
 
         // Bind the vertex array object and draw the triangle
         glBindVertexArray(VAO);
@@ -62,6 +56,15 @@ int main()
         // Swap the front and back buffers and poll for events
         glfwSwapBuffers(Window::window);
         glfwPollEvents();
+        glClear(GL_COLOR_BUFFER_BIT);
+
+    // 3. Use the shader program
+    glUseProgram(shader.ID);   // or shader.use(); if that's in shader.h
+
+    // 4. Send data to uniforms
+    shader.setFloat("time", glfwGetTime());  
+    shader.setVec4("ourColor", 0.2f, 0.3f, 1.0f, 1.0f);
+    shader.use();
     }
 
     glDeleteVertexArrays(1, &VAO);
