@@ -1,8 +1,9 @@
 #version 330 core
-in vec3 ourColor;        // input from vertex shader
 out vec4 FragColor;
+
+in vec3 fragColor;   
 
 void main()
 {
-    FragColor = vec4(ourColor, 1.0);  // use interpolated color
+    FragColor = vec4(fragColor, 1.0);
 }

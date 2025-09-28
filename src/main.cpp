@@ -5,8 +5,8 @@
 #include "window.h"
 #include "shader.h"
 
-const unsigned int SCR_WIDTH = 800;
-const unsigned int SCR_HEIGHT = 600;
+const unsigned int SCR_WIDTH = 1000;
+const unsigned int SCR_HEIGHT = 800;
 
 int main()
 {
@@ -17,11 +17,13 @@ int main()
     Shader shader("include/shaders/vertex.glsl", "include/shaders/fragment.glsl");
 
     // Vertex data
-    float vertices[] = {
-        -0.5f, -0.5f, 0.0f, // left
-         0.5f, -0.5f, 0.0f, // right
-         0.0f,  0.5f, 0.0f  // top
+    GLfloat vertices[] = {
+    // positions       // colors
+    -0.5f, -0.5f, 0.0f,  1.0f, 0.0f, 0.0f,
+     0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f,
+     0.0f,  0.5f, 0.0f,  0.0f, 0.0f, 1.0f
     };
+
 
     unsigned int VBO, VAO;
     glGenVertexArrays(1, &VAO);
@@ -32,11 +34,23 @@ int main()
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+    // Set the vertex attribute pointer for the position data
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
 
-    glBindBuffer(GL_ARRAY_BUFFER, 0);
+    // Set the vertex attribute pointer for the color data
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
+    glEnableVertexAttribArray(1);
+
+    // Set the vertex attribute pointer for the normal data
+    glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(6 * sizeof(float)));
+    glEnableVertexAttribArray(2);
+
+    // Unbind the vertex array object so that other vertex array objects can be used
     glBindVertexArray(0);
+
+    // Unbind the vertex buffer object so that other vertex buffer objects can be used
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
 
     // Main loop: handles rendering and event processing until the window is closed
     while (!glfwWindowShouldClose(Window::window))
@@ -48,6 +62,7 @@ int main()
         glClearColor(0.2f, 0.3f, 0.6f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
+        shader.use();
 
         // Bind the vertex array object and draw the triangle
         glBindVertexArray(VAO);
@@ -57,14 +72,7 @@ int main()
         glfwSwapBuffers(Window::window);
         glfwPollEvents();
         glClear(GL_COLOR_BUFFER_BIT);
-
-    // 3. Use the shader program
-    glUseProgram(shader.ID);   // or shader.use(); if that's in shader.h
-
-    // 4. Send data to uniforms
-    shader.setFloat("time", glfwGetTime());  
-    shader.setVec4("ourColor", 0.2f, 0.3f, 1.0f, 1.0f);
-    shader.use();
+    
     }
 
     glDeleteVertexArrays(1, &VAO);
