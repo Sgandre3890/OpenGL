@@ -5,12 +5,15 @@ CMakeFiles/out.dir/src/main.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/Op
   C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/GLFW/glfw3.h \
   C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/KHR/khrplatform.h \
   C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glad/glad.h \
+  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/stb/stb_image.h \
   C:/msys64/ucrt64/include/_mingw.h \
   C:/msys64/ucrt64/include/_mingw_mac.h \
   C:/msys64/ucrt64/include/_mingw_off_t.h \
   C:/msys64/ucrt64/include/_mingw_secapi.h \
   C:/msys64/ucrt64/include/_mingw_stat64.h \
+  C:/msys64/ucrt64/include/_mingw_stdarg.h \
   C:/msys64/ucrt64/include/_timeval.h \
+  C:/msys64/ucrt64/include/assert.h \
   C:/msys64/ucrt64/include/c++/14.2.0/backward/binders.h \
   C:/msys64/ucrt64/include/c++/14.2.0/bit \
   C:/msys64/ucrt64/include/c++/14.2.0/bits/alloc_traits.h \
@@ -93,6 +96,7 @@ CMakeFiles/out.dir/src/main.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/Op
   C:/msys64/ucrt64/include/c++/14.2.0/iostream \
   C:/msys64/ucrt64/include/c++/14.2.0/istream \
   C:/msys64/ucrt64/include/c++/14.2.0/limits \
+  C:/msys64/ucrt64/include/c++/14.2.0/math.h \
   C:/msys64/ucrt64/include/c++/14.2.0/new \
   C:/msys64/ucrt64/include/c++/14.2.0/ostream \
   C:/msys64/ucrt64/include/c++/14.2.0/pstl/pstl_config.h \
@@ -148,13 +152,16 @@ CMakeFiles/out.dir/src/main.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/Op
   C:/msys64/ucrt64/include/sdks/_mingw_ddk.h \
   C:/msys64/ucrt64/include/sec_api/stdio_s.h \
   C:/msys64/ucrt64/include/sec_api/stdlib_s.h \
+  C:/msys64/ucrt64/include/sec_api/string_s.h \
   C:/msys64/ucrt64/include/sec_api/sys/timeb_s.h \
   C:/msys64/ucrt64/include/sec_api/wchar_s.h \
   C:/msys64/ucrt64/include/signal.h \
+  C:/msys64/ucrt64/include/stdarg.h \
   C:/msys64/ucrt64/include/stddef.h \
   C:/msys64/ucrt64/include/stdint.h \
   C:/msys64/ucrt64/include/stdio.h \
   C:/msys64/ucrt64/include/stdlib.h \
+  C:/msys64/ucrt64/include/string.h \
   C:/msys64/ucrt64/include/swprintf.inl \
   C:/msys64/ucrt64/include/sys/timeb.h \
   C:/msys64/ucrt64/include/sys/types.h \
@@ -162,12 +169,17 @@ CMakeFiles/out.dir/src/main.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/Op
   C:/msys64/ucrt64/include/vadefs.h \
   C:/msys64/ucrt64/include/wchar.h \
   C:/msys64/ucrt64/include/wctype.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/emmintrin.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mmintrin.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
   C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
+  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xmmintrin.h \
   C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/shader.h \
+  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/stb.cpp \
   C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/window.h
 
 CMakeFiles/out.dir/src/shader.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/shader.cpp \
@@ -486,8 +498,6 @@ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/window.h:
 
 C:/msys64/ucrt64/include/_mingw_mac.h:
 
-C:/msys64/ucrt64/include/c++/14.2.0/bits/stringfwd.h:
-
 C:/msys64/ucrt64/include/c++/14.2.0/bits/requires_hosted.h:
 
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/GLFW/glfw3.h:
@@ -497,10 +507,6 @@ C:/msys64/ucrt64/include/c++/14.2.0/bits/std_abs.h:
 C:/msys64/ucrt64/include/c++/14.2.0/bits/exception_defines.h:
 
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/main.cpp:
-
-C:/msys64/ucrt64/include/c++/14.2.0/bits/invoke.h:
-
-C:/msys64/ucrt64/include/_mingw_secapi.h:
 
 C:/msys64/ucrt64/include/c++/14.2.0/bit:
 
@@ -516,13 +522,45 @@ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glad/glad.h:
 
 C:/msys64/ucrt64/include/_mingw_off_t.h:
 
+C:/msys64/ucrt64/include/c++/14.2.0/bits/streambuf.tcc:
+
+C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/stb/stb_image.h:
+
+C:/msys64/ucrt64/include/c++/14.2.0/bits/invoke.h:
+
+C:/msys64/ucrt64/include/_mingw_secapi.h:
+
 C:/msys64/ucrt64/include/c++/14.2.0/bits/exception.h:
 
 C:/msys64/ucrt64/include/_mingw_stat64.h:
 
+C:/msys64/ucrt64/include/c++/14.2.0/bits/basic_ios.tcc:
+
+C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_algobase.h:
+
+C:/msys64/ucrt64/include/stdio.h:
+
+C:/msys64/ucrt64/include/c++/14.2.0/bits/range_access.h:
+
+C:/msys64/ucrt64/include/wchar.h:
+
+C:/msys64/ucrt64/include/c++/14.2.0/tr1/riemann_zeta.tcc:
+
+C:/msys64/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h:
+
+C:/msys64/ucrt64/include/c++/14.2.0/bits/functional_hash.h:
+
+C:/msys64/ucrt64/include/c++/14.2.0/bits/streambuf_iterator.h:
+
+C:/msys64/ucrt64/include/c++/14.2.0/bits/basic_string.tcc:
+
+C:/msys64/ucrt64/include/_mingw_stdarg.h:
+
 C:/msys64/ucrt64/include/c++/14.2.0/bits/specfun.h:
 
 C:/msys64/ucrt64/include/_timeval.h:
+
+C:/msys64/ucrt64/include/assert.h:
 
 C:/msys64/ucrt64/include/c++/14.2.0/ext/atomicity.h:
 
@@ -547,26 +585,6 @@ C:/msys64/ucrt64/include/c++/14.2.0/ext/alloc_traits.h:
 C:/msys64/ucrt64/include/c++/14.2.0/bits/basic_string.h:
 
 C:/msys64/ucrt64/include/c++/14.2.0/bits/basic_ios.h:
-
-C:/msys64/ucrt64/include/c++/14.2.0/bits/basic_string.tcc:
-
-C:/msys64/ucrt64/include/c++/14.2.0/bits/streambuf_iterator.h:
-
-C:/msys64/ucrt64/include/c++/14.2.0/bits/basic_ios.tcc:
-
-C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_algobase.h:
-
-C:/msys64/ucrt64/include/stdio.h:
-
-C:/msys64/ucrt64/include/c++/14.2.0/bits/range_access.h:
-
-C:/msys64/ucrt64/include/wchar.h:
-
-C:/msys64/ucrt64/include/c++/14.2.0/tr1/riemann_zeta.tcc:
-
-C:/msys64/ucrt64/include/c++/14.2.0/bits/cpp_type_traits.h:
-
-C:/msys64/ucrt64/include/c++/14.2.0/bits/functional_hash.h:
 
 C:/msys64/ucrt64/include/c++/14.2.0/bits/memoryfwd.h:
 
@@ -622,9 +640,9 @@ C:/msys64/ucrt64/include/math.h:
 
 C:/msys64/ucrt64/include/c++/14.2.0/limits:
 
-C:/msys64/ucrt64/include/c++/14.2.0/bits/postypes.h:
-
 C:/msys64/ucrt64/include/c++/14.2.0/bits/string_view.tcc:
+
+C:/msys64/ucrt64/include/c++/14.2.0/bits/postypes.h:
 
 C:/msys64/ucrt64/include/c++/14.2.0/bits/refwrap.h:
 
@@ -638,7 +656,7 @@ C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_funcs.h:
 
 C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_iterator_base_types.h:
 
-C:/msys64/ucrt64/include/c++/14.2.0/bits/streambuf.tcc:
+C:/msys64/ucrt64/include/c++/14.2.0/bits/stringfwd.h:
 
 C:/msys64/ucrt64/include/c++/14.2.0/bits/codecvt.h:
 
@@ -687,6 +705,8 @@ C:/msys64/ucrt64/include/c++/14.2.0/iosfwd:
 C:/msys64/ucrt64/include/c++/14.2.0/iostream:
 
 C:/msys64/ucrt64/include/c++/14.2.0/istream:
+
+C:/msys64/ucrt64/include/c++/14.2.0/math.h:
 
 C:/msys64/ucrt64/include/stdlib.h:
 
@@ -802,15 +822,23 @@ C:/msys64/ucrt64/include/sec_api/stdio_s.h:
 
 C:/msys64/ucrt64/include/sec_api/stdlib_s.h:
 
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h:
+
+C:/msys64/ucrt64/include/sec_api/string_s.h:
+
 C:/msys64/ucrt64/include/sec_api/sys/timeb_s.h:
 
 C:/msys64/ucrt64/include/sec_api/wchar_s.h:
 
 C:/msys64/ucrt64/include/signal.h:
 
+C:/msys64/ucrt64/include/stdarg.h:
+
 C:/msys64/ucrt64/include/stddef.h:
 
 C:/msys64/ucrt64/include/stdint.h:
+
+C:/msys64/ucrt64/include/string.h:
 
 C:/msys64/ucrt64/include/swprintf.inl:
 
@@ -820,17 +848,25 @@ C:/msys64/ucrt64/include/time.h:
 
 C:/msys64/ucrt64/include/vadefs.h:
 
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/emmintrin.h:
+
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h:
 
-C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mmintrin.h:
 
-C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h:
+C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/shader.cpp:
+
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h:
+
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h:
 
 C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h:
 
-C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/shader.cpp:
+C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xmmintrin.h:
+
+C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/stb.cpp:
 
 C:/msys64/ucrt64/include/c++/14.2.0/bits/fstream.tcc:
 

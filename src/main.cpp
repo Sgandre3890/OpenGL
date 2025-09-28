@@ -4,6 +4,7 @@
 #include <cmath>
 #include "window.h"
 #include "shader.h"
+#include "stb.cpp"
 
 const unsigned int SCR_WIDTH = 1000;
 const unsigned int SCR_HEIGHT = 800;
