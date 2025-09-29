@@ -85,7 +85,7 @@ int main()
     unsigned char* bytes = stbi_load("./include/Textures/marble.jpg", &widthImg, &heightImg, &numColCh, 0);
     if (!bytes) {
         std::cerr << "Failed to load texture: ./include/Textures/marble.jpg\n";
-        // handle error or exit
+        return -1;  // Handle error
     }
 
     GLuint texture;
@@ -99,11 +99,17 @@ int main()
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 
-    // choose format based on number of channels
+    // Choose the format of the texture based on the number of color channels
+    // If there are 4 color channels, use GL_RGBA, otherwise use GL_RGB
     GLenum format = (numColCh == 4 ? GL_RGBA : GL_RGB);
+    
+    // Upload the pixel data to OpenGL
     glTexImage2D(GL_TEXTURE_2D, 0, format, widthImg, heightImg, 0, format, GL_UNSIGNED_BYTE, bytes);
+    
+    // Generate mipmaps for the texture
     glGenerateMipmap(GL_TEXTURE_2D);
 
+    // Free the memory allocated for the image data
     stbi_image_free(bytes);
     
 
