@@ -4,9 +4,10 @@
 #include <cmath>
 #include "window.h"
 #include "shader.h"
+#include "stb.cpp"
 
 
-const unsigned int SCR_WIDTH = 1000;
+const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 800;
 
 int main()
@@ -19,39 +20,92 @@ int main()
 
     // Vertex data
     GLfloat vertices[] = {
-    // positions       // colors
-    -0.5f, -0.5f, 0.0f,  1.0f, 0.0f, 0.0f,
-     0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f,
-     0.0f,  0.5f, 0.0f,  0.0f, 0.0f, 1.0f
+        // positions          // colors           // texture coords          // normals
+        0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   1.0f, 1.0f,   0.0f, 0.0f, 1.0f, // top right
+        0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   1.0f, 0.0f,   0.0f, 0.0f, 1.0f, // bottom right
+        -0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f,   0.0f, 0.0f, 1.0f, // bottom left
+        -0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 1.0f,   0.0f, 0.0f, 1.0f  // top left 
+    };
+    unsigned int indices[] = {  
+        0, 1, 3, // first triangle
+        1, 2, 3  // second triangle
     };
 
 
-    unsigned int VBO, VAO;
+    unsigned int VBO, VAO, EBO;
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
+    glGenBuffers(1, &EBO);
 
     glBindVertexArray(VAO);
 
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
-    // Set the vertex attribute pointer for the position data
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
+    
+
+
+    // stride = 11 floats
+    GLsizei stride = 11 * sizeof(float);
+
+    // Position
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, stride, (void*)0);
     glEnableVertexAttribArray(0);
 
-    // Set the vertex attribute pointer for the color data
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
+    // Color
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, stride, (void*)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
 
-    // Set the vertex attribute pointer for the normal data
-    glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(6 * sizeof(float)));
+    // TexCoord
+    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, stride, (void*)(6 * sizeof(float)));
     glEnableVertexAttribArray(2);
 
-    // Unbind the vertex array object so that other vertex array objects can be used
+    // Normal
+    glVertexAttribPointer(3, 3, GL_FLOAT, GL_FALSE, stride, (void*)(8 * sizeof(float)));
+    glEnableVertexAttribArray(3);
+
+
+    // ... after setting up vertex attrib pointers ...
+
+    // Unbind VAO (allowed), but *do not* unbind the element array buffer while VAO is bound.
+    // glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);   // REMOVE this line!
     glBindVertexArray(0);
 
-    // Unbind the vertex buffer object so that other vertex buffer objects can be used
+    // It's OK to unbind the VBO if you want:
     glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+
+    // Importing texture
+    stbi_set_flip_vertically_on_load(true);
+
+    int widthImg, heightImg, numColCh;
+    unsigned char* bytes = stbi_load("./include/Textures/marble.jpg", &widthImg, &heightImg, &numColCh, 0);
+    if (!bytes) {
+        std::cerr << "Failed to load texture: ./include/Textures/marble.jpg\n";
+        // handle error or exit
+    }
+
+    GLuint texture;
+    glGenTextures(1, &texture);
+    glActiveTexture(GL_TEXTURE0);
+    glBindTexture(GL_TEXTURE_2D, texture); // <-- BIND before setting params and uploading
+
+    // texture settings (now apply to 'texture')
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST_MIPMAP_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+
+    // choose format based on number of channels
+    GLenum format = (numColCh == 4 ? GL_RGBA : GL_RGB);
+    glTexImage2D(GL_TEXTURE_2D, 0, format, widthImg, heightImg, 0, format, GL_UNSIGNED_BYTE, bytes);
+    glGenerateMipmap(GL_TEXTURE_2D);
+
+    stbi_image_free(bytes);
+    
 
     // Main loop: handles rendering and event processing until the window is closed
     while (!glfwWindowShouldClose(Window::window))
@@ -65,17 +119,21 @@ int main()
 
         shader.use();
 
+        //Textures:
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, texture);
+
         // Bind the vertex array object and draw the triangle
         glBindVertexArray(VAO);
-        glDrawArrays(GL_TRIANGLES, 0, 3);
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+
 
         // Swap the front and back buffers and poll for events
         glfwSwapBuffers(Window::window);
         glfwPollEvents();
-        glClear(GL_COLOR_BUFFER_BIT);
-    
     }
 
+    glDeleteTextures(1, &texture);
     glDeleteVertexArrays(1, &VAO);
     glDeleteBuffers(1, &VBO);
 
