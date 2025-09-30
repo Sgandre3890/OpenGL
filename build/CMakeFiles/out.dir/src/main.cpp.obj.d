@@ -160,7 +160,6 @@ CMakeFiles/out.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
  C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\window.h \
  C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\shader.h \
- C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\stb.cpp \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/stb/stb_image.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
  C:/msys64/ucrt64/include/stdarg.h \

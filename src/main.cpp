@@ -4,7 +4,8 @@
 #include <cmath>
 #include "window.h"
 #include "shader.h"
-#include "stb.cpp"
+#define STB_IMAGE_IMPLEMENTATION
+#include "stb_image.h"
 
 
 const unsigned int SCR_WIDTH = 800;
