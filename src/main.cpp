@@ -87,6 +87,8 @@ int main()
     if (!bytes) {
         std::cerr << "Failed to load texture: ./include/Textures/marble.jpg\n";
         return -1;  // Handle error
+    } else {
+        std::cout << "Texture loaded: " << widthImg << "x" << heightImg << " with " << numColCh << " channels.\n";
     }
 
     GLuint texture;
