@@ -183,6 +183,30 @@ src/shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/shader.cpp.s
 .PHONY : src/shader.cpp.s
 
+src/stb.obj: src/stb.cpp.obj
+.PHONY : src/stb.obj
+
+# target to build an object file
+src/stb.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/stb.cpp.obj
+.PHONY : src/stb.cpp.obj
+
+src/stb.i: src/stb.cpp.i
+.PHONY : src/stb.i
+
+# target to preprocess a source file
+src/stb.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/stb.cpp.i
+.PHONY : src/stb.cpp.i
+
+src/stb.s: src/stb.cpp.s
+.PHONY : src/stb.s
+
+# target to generate assembly for a file
+src/stb.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/stb.cpp.s
+.PHONY : src/stb.cpp.s
+
 src/window.obj: src/window.cpp.obj
 .PHONY : src/window.obj
 
@@ -223,6 +247,9 @@ help:
 	@echo ... src/shader.obj
 	@echo ... src/shader.i
 	@echo ... src/shader.s
+	@echo ... src/stb.obj
+	@echo ... src/stb.i
+	@echo ... src/stb.s
 	@echo ... src/window.obj
 	@echo ... src/window.i
 	@echo ... src/window.s

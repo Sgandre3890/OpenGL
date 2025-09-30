@@ -39,7 +39,7 @@
 						"kernel32"
 					]
 				},
-				"path" : "C:/msys64/ucrt64/bin/gcc.exe",
+				"path" : "gcc",
 				"version" : "14.2.0"
 			},
 			"language" : "C",
@@ -92,7 +92,7 @@
 						"kernel32"
 					]
 				},
-				"path" : "C:/msys64/ucrt64/bin/g++.exe",
+				"path" : "g++",
 				"version" : "14.2.0"
 			},
 			"language" : "CXX",

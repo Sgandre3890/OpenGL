@@ -3,21 +3,19 @@ cmake_minimum_required(VERSION 3.31)
 project(OpenGl)
 
 set(CMAKE_BUILD_TYPE Release)
-
-
+set(CMAKE_C_COMPILER gcc)
+set(CMAKE_CXX_COMPILER g++)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
+
+include_directories(${CMAKE_SOURCE_DIR}/include)
+
 file(GLOB SOURCES "src/*.cpp")
 
 add_executable(out ${SOURCES})
-
-target_include_directories(out PUBLIC ${CMAKE_SOURCE_DIR}/include)
-target_include_directories(out PUBLIC ${CMAKE_SOURCE_DIR}/include/glm-0.9.9.7/glm)
-target_include_directories(out PUBLIC ${CMAKE_SOURCE_DIR}/include/stb)
-
-
 
 if (CMAKE_SYSTEM_NAME STREQUAL "Windows")
     target_link_libraries(out "${CMAKE_SOURCE_DIR}/statLib/libglfw3WIN.a")
@@ -31,4 +29,3 @@ else ()
     target_link_libraries(out "${CMAKE_SOURCE_DIR}/statLib/libglfw3MAC.a")
     target_link_libraries(out "${CMAKE_SOURCE_DIR}/statLib/libgladMAC.a")
 endif()
-

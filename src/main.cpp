@@ -4,13 +4,7 @@
 #include <cmath>
 #include "window.h"
 #include "shader.h"
-#define STB_IMAGE_IMPLEMENTATION
-#include "stb_image.h"
-#include "glm/glm.hpp"
-#include "glm/gtc/matrix_transform.hpp"
-#include "glm/gtc/type_ptr.hpp"
-
-
+#include "stb.cpp"
 
 
 const unsigned int SCR_WIDTH = 800;
@@ -134,22 +128,6 @@ int main()
         //Textures:
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D, texture);
-
-        // 3D Graphics transformations using GLM
-        glm::mat4 model = glm::mat4(1.0f);
-        glm::mat4 view = glm::mat4(1.0f);
-        glm::mat4 projection = glm::mat4(1.0f);
-
-        view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
-        projection = glm::perspective(glm::radians(45.0f), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
-
-        int modelLoc = glGetUniformLocation(shader.ID, "model");
-        int viewLoc = glGetUniformLocation(shader.ID, "view");
-        int projLoc = glGetUniformLocation(shader.ID, "projection");
-
-        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-        glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
 
         // Bind the vertex array object and draw the triangle
         glBindVertexArray(VAO);
