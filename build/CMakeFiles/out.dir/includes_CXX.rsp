@@ -1,1 +1,1 @@
--IC:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include -IC:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/stb
+-IC:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include -IC:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/stb -I"C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glm-0.9.9.7/glm"

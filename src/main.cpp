@@ -6,6 +6,9 @@
 #include "shader.h"
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
 
 
 const unsigned int SCR_WIDTH = 800;
@@ -20,17 +23,58 @@ int main()
     Shader shader("include/shaders/vertex.glsl", "include/shaders/fragment.glsl");
 
     // Vertex data
+    // Each vertex: position (3), color (3), texcoord (2), normal (3)
+    // stride = 11 floats
     GLfloat vertices[] = {
-        // positions          // colors           // texture coords          // normals
-        0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 1.0f,   1.0f, 1.0f,   0.0f, 0.0f, 1.0f, // top right
-        0.5f, -0.5f, 0.0f,   1.0f, 1.0f, 1.0f,   1.0f, 0.0f,   0.0f, 0.0f, 1.0f, // bottom right
-        -0.5f, -0.5f, 0.0f,   1.0f, 1.0f, 1.0f,   0.0f, 0.0f,   0.0f, 0.0f, 1.0f, // bottom left
-        -0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 1.0f,   0.0f, 1.0f,   0.0f, 0.0f, 1.0f  // top left 
+        // position           // color      // tex    // normal
+        // Base
+        -0.5f, 0.0f,  0.5f,   1,1,1,    0,0,   0,-1,0,  // 0 front-left
+        0.5f, 0.0f,  0.5f,   1,1,1,    1,0,   0,-1,0,  // 1 front-right
+        0.5f, 0.0f, -0.5f,   1,1,1,    1,1,   0,-1,0,  // 2 back-right
+        -0.5f, 0.0f, -0.5f,   1,1,1,    0,1,   0,-1,0,  // 3 back-left
+
+        // Sides (apex duplicated per face for correct normals)
+        // Front face
+        -0.5f, 0.0f,  0.5f,   1,1,1,    0,0,   0.0f,0.707f,0.707f,  // 4 front-left
+        0.5f, 0.0f,  0.5f,   1,1,1,    1,0,   0.0f,0.707f,0.707f,  // 5 front-right
+        0.0f, 0.8f,  0.0f,   1,1,1,    0.5,1,  0.0f,0.707f,0.707f, // 6 apex front
+
+        // Right face
+        0.5f, 0.0f,  0.5f,   1,1,1,    0,0,   0.707f,0.707f,0.0f,  // 7 front-right
+        0.5f, 0.0f, -0.5f,   1,1,1,    1,0,   0.707f,0.707f,0.0f,  // 8 back-right
+        0.0f, 0.8f,  0.0f,   1,1,1,    0.5,1,  0.707f,0.707f,0.0f, // 9 apex right
+
+        // Back face
+        0.5f, 0.0f, -0.5f,   1,1,1,    0,0,   0.0f,0.707f,-0.707f, // 10 back-right
+        -0.5f, 0.0f, -0.5f,   1,1,1,    1,0,   0.0f,0.707f,-0.707f, // 11 back-left
+        0.0f, 0.8f,  0.0f,   1,1,1,    0.5,1,  0.0f,0.707f,-0.707f,// 12 apex back
+
+        // Left face
+        -0.5f, 0.0f, -0.5f,   1,1,1,    0,0,   -0.707f,0.707f,0.0f,// 13 back-left
+        -0.5f, 0.0f,  0.5f,   1,1,1,    1,0,   -0.707f,0.707f,0.0f,// 14 front-left
+        0.0f, 0.8f,  0.0f,   1,1,1,    0.5,1,  -0.707f,0.707f,0.0f// 15 apex left
     };
-    unsigned int indices[] = {  
-        0, 1, 3, // first triangle
-        1, 2, 3  // second triangle
+
+    unsigned int indices[] = {
+        // Base
+        0, 1, 2,
+        0, 2, 3,
+
+        // Front
+        4, 5, 6,
+
+        // Right
+        7, 8, 9,
+
+        // Back
+        10,11,12,
+
+        // Left
+        13,14,15
     };
+
+
+
 
 
     unsigned int VBO, VAO, EBO;
@@ -83,9 +127,9 @@ int main()
     stbi_set_flip_vertically_on_load(true);
 
     int widthImg, heightImg, numColCh;
-    unsigned char* bytes = stbi_load("./include/Textures/marble.jpg", &widthImg, &heightImg, &numColCh, 0);
+    unsigned char* bytes = stbi_load("./include/Textures/brick.png", &widthImg, &heightImg, &numColCh, 0);
     if (!bytes) {
-        std::cerr << "Failed to load texture: ./include/Textures/marble.jpg\n";
+        std::cerr << "Failed to load texture: ./include/Textures/brick.png\n";
         return -1;  // Handle error
     } else {
         std::cout << "Texture loaded: " << widthImg << "x" << heightImg << " with " << numColCh << " channels.\n";
@@ -114,7 +158,9 @@ int main()
 
     // Free the memory allocated for the image data
     stbi_image_free(bytes);
-    
+
+    // Unbind the texture
+    glEnable(GL_DEPTH_TEST);
 
     // Main loop: handles rendering and event processing until the window is closed
     while (!glfwWindowShouldClose(Window::window))
@@ -124,9 +170,30 @@ int main()
 
         // Clear the screen and set the draw color
         glClearColor(0.2f, 0.3f, 0.6f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         shader.use();
+
+        // Set the view and projection matrices in the shader
+        glm::mat4 model = glm::mat4(1.0f);
+        glm::mat4 projection = glm::mat4(1.0f);
+        glm::mat4 view = glm::mat4(1.0f);
+
+        view = glm::translate(view, glm::vec3(0.0f, -0.5f, -3.0f));
+        projection = glm::perspective(glm::radians(45.0f), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
+
+        model = glm::rotate(model, (float)glfwGetTime() * glm::radians(50.0f), glm::vec3(0.0f, 1.0f, 0.0f));
+
+        int modelLoc = glGetUniformLocation(shader.ID, "model");
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+
+        int viewLoc = glGetUniformLocation(shader.ID, "view");
+        glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
+
+        int projectionLoc = glGetUniformLocation(shader.ID, "projection");
+        glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
+
+
 
         //Textures:
         glActiveTexture(GL_TEXTURE0);
@@ -134,7 +201,7 @@ int main()
 
         // Bind the vertex array object and draw the triangle
         glBindVertexArray(VAO);
-        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+        glDrawElements(GL_TRIANGLES, sizeof(indices) / sizeof(int), GL_UNSIGNED_INT, 0);
 
 
         // Swap the front and back buffers and poll for events
