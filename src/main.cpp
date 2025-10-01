@@ -127,9 +127,9 @@ int main()
     stbi_set_flip_vertically_on_load(true);
 
     int widthImg, heightImg, numColCh;
-    unsigned char* bytes = stbi_load("./include/Textures/brick.png", &widthImg, &heightImg, &numColCh, 0);
+    unsigned char* bytes = stbi_load("./include/Textures/marble.jpg", &widthImg, &heightImg, &numColCh, 0);
     if (!bytes) {
-        std::cerr << "Failed to load texture: ./include/Textures/brick.png\n";
+        std::cerr << "Failed to load texture: ./include/Textures/marble.jpg\n";
         return -1;  // Handle error
     } else {
         std::cout << "Texture loaded: " << widthImg << "x" << heightImg << " with " << numColCh << " channels.\n";
