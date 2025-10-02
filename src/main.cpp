@@ -178,6 +178,9 @@ int main()
         //Camera matrix
         camera.Matrix(45.0f, 0.1f, 100.0f, shader, "camMatrix");
 
+        //Inputs
+        camera.Inputs(Window::window);
+
         //Textures:
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D, texture);

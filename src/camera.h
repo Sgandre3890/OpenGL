@@ -17,9 +17,14 @@ public:
 
     int SCR_WIDTH;
     int SCR_HEIGHT;
+    
+    bool firstClick = true;
 
     float speed = 0.1f;
     float sensitivity = 100.0f;
+
+    float yaw   = -90.0f; // facing -Z by default
+    float pitch = 0.0f;
 
     Camera(int SCR_WIDTH, int SCR_HEIGHT, glm::vec3 position);
 
