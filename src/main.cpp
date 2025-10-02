@@ -9,6 +9,7 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
+#include "camera.h"
 
 
 const unsigned int SCR_WIDTH = 800;
@@ -90,9 +91,6 @@ int main()
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
 
-    
-
-
     // stride = 11 floats
     GLsizei stride = 11 * sizeof(float);
 
@@ -162,6 +160,9 @@ int main()
     // Unbind the texture
     glEnable(GL_DEPTH_TEST);
 
+    //Camera
+    Camera camera(SCR_WIDTH, SCR_HEIGHT, glm::vec3(0.0f, 0.0f, 2.0f));
+
     // Main loop: handles rendering and event processing until the window is closed
     while (!glfwWindowShouldClose(Window::window))
     {
@@ -174,26 +175,8 @@ int main()
 
         shader.use();
 
-        // Set the view and projection matrices in the shader
-        glm::mat4 model = glm::mat4(1.0f);
-        glm::mat4 projection = glm::mat4(1.0f);
-        glm::mat4 view = glm::mat4(1.0f);
-
-        view = glm::translate(view, glm::vec3(0.0f, -0.5f, -3.0f));
-        projection = glm::perspective(glm::radians(45.0f), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
-
-        model = glm::rotate(model, (float)glfwGetTime() * glm::radians(50.0f), glm::vec3(0.0f, 1.0f, 0.0f));
-
-        int modelLoc = glGetUniformLocation(shader.ID, "model");
-        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-
-        int viewLoc = glGetUniformLocation(shader.ID, "view");
-        glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-
-        int projectionLoc = glGetUniformLocation(shader.ID, "projection");
-        glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
-
-
+        //Camera matrix
+        camera.Matrix(45.0f, 0.1f, 100.0f, shader, "camMatrix");
 
         //Textures:
         glActiveTexture(GL_TEXTURE0);

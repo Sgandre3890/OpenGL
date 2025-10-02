@@ -2,6 +2,8 @@ file(REMOVE_RECURSE
   "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe"
   "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe.manifest"
   "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.pdb"
+  "CMakeFiles/out.dir/src/camera.cpp.obj"
+  "CMakeFiles/out.dir/src/camera.cpp.obj.d"
   "CMakeFiles/out.dir/src/main.cpp.obj"
   "CMakeFiles/out.dir/src/main.cpp.obj.d"
   "CMakeFiles/out.dir/src/shader.cpp.obj"
