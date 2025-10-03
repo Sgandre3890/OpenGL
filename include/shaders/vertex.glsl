@@ -6,11 +6,11 @@ layout (location = 2) in vec2 texCoord;
 out vec3 fragColor;
 out vec2 fragTexCoord;
 
-uniform mat4 camMatrix;
+uniform mat4 ViewMatrix;
 
 void main()
 {
-    gl_Position = camMatrix * vec4(aPos, 1.0);
+    gl_Position = ViewMatrix * vec4(aPos, 1.0);
     fragColor = color;
     fragTexCoord = texCoord;
 }

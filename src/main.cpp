@@ -73,7 +73,20 @@ int main()
         // Left
         13,14,15
     };
+    /*
+    GLfloat lightVertices[] = 
+    {
+        -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.0f, 0.0f,
+         0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f, 0.0f,
+         0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f, 1.0f,
+         0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f, 1.0f,
+    };
 
+    GLuint lightIndices[] = {
+        0, 1, 2,
+        0, 2, 3
+    };
+    */
 
 
 
@@ -110,16 +123,12 @@ int main()
     glVertexAttribPointer(3, 3, GL_FLOAT, GL_FALSE, stride, (void*)(8 * sizeof(float)));
     glEnableVertexAttribArray(3);
 
-
-    // ... after setting up vertex attrib pointers ...
-
     // Unbind VAO (allowed), but *do not* unbind the element array buffer while VAO is bound.
-    // glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);   // REMOVE this line!
+    // glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);   
     glBindVertexArray(0);
 
     // It's OK to unbind the VBO if you want:
     glBindBuffer(GL_ARRAY_BUFFER, 0);
-
 
     // Importing texture
     stbi_set_flip_vertically_on_load(true);
@@ -128,7 +137,7 @@ int main()
     unsigned char* bytes = stbi_load("./include/Textures/marble.jpg", &widthImg, &heightImg, &numColCh, 0);
     if (!bytes) {
         std::cerr << "Failed to load texture: ./include/Textures/marble.jpg\n";
-        return -1;  // Handle error
+        return -1;  
     } else {
         std::cout << "Texture loaded: " << widthImg << "x" << heightImg << " with " << numColCh << " channels.\n";
     }
@@ -136,9 +145,9 @@ int main()
     GLuint texture;
     glGenTextures(1, &texture);
     glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, texture); // <-- BIND before setting params and uploading
+    glBindTexture(GL_TEXTURE_2D, texture); 
 
-    // texture settings (now apply to 'texture')
+    // texture settings 
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST_MIPMAP_NEAREST);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
@@ -175,12 +184,13 @@ int main()
 
         shader.use();
 
-        //Camera matrix
-        camera.Matrix(45.0f, 0.1f, 100.0f, shader, "camMatrix");
+        
 
         //Inputs
         camera.Inputs(Window::window);
-
+        //Camera matrix
+        camera.Matrix(shader, "ViewMatrix");
+        camera.updateMatrix(45.0f, 0.1f, 100.0f);
         //Textures:
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D, texture);
