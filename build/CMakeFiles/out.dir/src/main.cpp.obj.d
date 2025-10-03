@@ -158,8 +158,8 @@ CMakeFiles/out.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/tr1/poly_hermite.tcc \
  C:/msys64/ucrt64/include/c++/14.2.0/tr1/poly_laguerre.tcc \
  C:/msys64/ucrt64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
- C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\window.h \
- C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\shader.h \
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/window.h \
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/shader.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/stb/stb_image.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
  C:/msys64/ucrt64/include/stdarg.h \
@@ -360,9 +360,10 @@ CMakeFiles/out.dir/src/main.cpp.obj: \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glm-0.9.9.7/glm/glm/ext/vector_uint1_precision.hpp \
  C:/msys64/ucrt64/include/c++/14.2.0/cstring \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glm-0.9.9.7/glm/glm/gtc/type_ptr.inl \
- C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\camera.h \
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/camera.h \
  C:/msys64/ucrt64/include/c++/14.2.0/vector \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_uninitialized.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_vector.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_bvector.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/vector.tcc
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/vector.tcc \
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/shader.h

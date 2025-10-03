@@ -1,16 +1,4 @@
-#include <glad/glad.h>
-#include <GLFW/glfw3.h>
-#include <iostream>
-#include <cmath>
-#include "window.h"
-#include "shader.h"
-#define STB_IMAGE_IMPLEMENTATION
-#include "stb_image.h"
-#include <glm/glm.hpp>
-#include <glm/gtc/matrix_transform.hpp>
-#include <glm/gtc/type_ptr.hpp>
-#include "camera.h"
-
+#include "master.h"
 
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 800;
@@ -26,60 +14,47 @@ int main()
     // Vertex data
     // Each vertex: position (3), color (3), texcoord (2), normal (3)
     // stride = 11 floats
-    GLfloat vertices[] = {
-        // position           // color      // tex    // normal
-        // Base
-        -0.5f, 0.0f,  0.5f,   1,1,1,    0,0,   0,-1,0,  // 0 front-left
-        0.5f, 0.0f,  0.5f,   1,1,1,    1,0,   0,-1,0,  // 1 front-right
-        0.5f, 0.0f, -0.5f,   1,1,1,    1,1,   0,-1,0,  // 2 back-right
-        -0.5f, 0.0f, -0.5f,   1,1,1,    0,1,   0,-1,0,  // 3 back-left
+    GLfloat vertices[] =
+    { //     COORDINATES     /        COLORS          /    TexCoord   /        NORMALS       //
+        -0.5f, 0.0f,  0.5f,     0.83f, 0.70f, 0.44f, 	 0.0f, 0.0f,      0.0f, -1.0f, 0.0f, // Bottom side
+        -0.5f, 0.0f, -0.5f,     0.83f, 0.70f, 0.44f,	 0.0f, 5.0f,      0.0f, -1.0f, 0.0f, // Bottom side
+        0.5f, 0.0f, -0.5f,     0.83f, 0.70f, 0.44f,	 5.0f, 5.0f,      0.0f, -1.0f, 0.0f, // Bottom side
+        0.5f, 0.0f,  0.5f,     0.83f, 0.70f, 0.44f,	 5.0f, 0.0f,      0.0f, -1.0f, 0.0f, // Bottom side
 
-        // Sides (apex duplicated per face for correct normals)
-        // Front face
-        -0.5f, 0.0f,  0.5f,   1,1,1,    0,0,   0.0f,0.707f,0.707f,  // 4 front-left
-        0.5f, 0.0f,  0.5f,   1,1,1,    1,0,   0.0f,0.707f,0.707f,  // 5 front-right
-        0.0f, 0.8f,  0.0f,   1,1,1,    0.5,1,  0.0f,0.707f,0.707f, // 6 apex front
+        -0.5f, 0.0f,  0.5f,     0.83f, 0.70f, 0.44f, 	 0.0f, 0.0f,     -0.8f, 0.5f,  0.0f, // Left Side
+        -0.5f, 0.0f, -0.5f,     0.83f, 0.70f, 0.44f,	 5.0f, 0.0f,     -0.8f, 0.5f,  0.0f, // Left Side
+        0.0f, 0.8f,  0.0f,     0.92f, 0.86f, 0.76f,	 2.5f, 5.0f,     -0.8f, 0.5f,  0.0f, // Left Side
 
-        // Right face
-        0.5f, 0.0f,  0.5f,   1,1,1,    0,0,   0.707f,0.707f,0.0f,  // 7 front-right
-        0.5f, 0.0f, -0.5f,   1,1,1,    1,0,   0.707f,0.707f,0.0f,  // 8 back-right
-        0.0f, 0.8f,  0.0f,   1,1,1,    0.5,1,  0.707f,0.707f,0.0f, // 9 apex right
+        -0.5f, 0.0f, -0.5f,     0.83f, 0.70f, 0.44f,	 5.0f, 0.0f,      0.0f, 0.5f, -0.8f, // Non-facing side
+        0.5f, 0.0f, -0.5f,     0.83f, 0.70f, 0.44f,	 0.0f, 0.0f,      0.0f, 0.5f, -0.8f, // Non-facing side
+        0.0f, 0.8f,  0.0f,     0.92f, 0.86f, 0.76f,	 2.5f, 5.0f,      0.0f, 0.5f, -0.8f, // Non-facing side
 
-        // Back face
-        0.5f, 0.0f, -0.5f,   1,1,1,    0,0,   0.0f,0.707f,-0.707f, // 10 back-right
-        -0.5f, 0.0f, -0.5f,   1,1,1,    1,0,   0.0f,0.707f,-0.707f, // 11 back-left
-        0.0f, 0.8f,  0.0f,   1,1,1,    0.5,1,  0.0f,0.707f,-0.707f,// 12 apex back
+        0.5f, 0.0f, -0.5f,     0.83f, 0.70f, 0.44f,	 0.0f, 0.0f,      0.8f, 0.5f,  0.0f, // Right side
+        0.5f, 0.0f,  0.5f,     0.83f, 0.70f, 0.44f,	 5.0f, 0.0f,      0.8f, 0.5f,  0.0f, // Right side
+        0.0f, 0.8f,  0.0f,     0.92f, 0.86f, 0.76f,	 2.5f, 5.0f,      0.8f, 0.5f,  0.0f, // Right side
 
-        // Left face
-        -0.5f, 0.0f, -0.5f,   1,1,1,    0,0,   -0.707f,0.707f,0.0f,// 13 back-left
-        -0.5f, 0.0f,  0.5f,   1,1,1,    1,0,   -0.707f,0.707f,0.0f,// 14 front-left
-        0.0f, 0.8f,  0.0f,   1,1,1,    0.5,1,  -0.707f,0.707f,0.0f// 15 apex left
+        0.5f, 0.0f,  0.5f,     0.83f, 0.70f, 0.44f,	 5.0f, 0.0f,      0.0f, 0.5f,  0.8f, // Facing side
+        -0.5f, 0.0f,  0.5f,     0.83f, 0.70f, 0.44f, 	 0.0f, 0.0f,      0.0f, 0.5f,  0.8f, // Facing side
+        0.0f, 0.8f,  0.0f,     0.92f, 0.86f, 0.76f,	 2.5f, 5.0f,      0.0f, 0.5f,  0.8f  // Facing side
     };
 
-    unsigned int indices[] = {
-        // Base
-        0, 1, 2,
-        0, 2, 3,
-
-        // Front
-        4, 5, 6,
-
-        // Right
-        7, 8, 9,
-
-        // Back
-        10,11,12,
-
-        // Left
-        13,14,15
+    // Indices for vertices order
+    GLuint indices[] =
+    {
+        0, 1, 2, // Bottom side
+        0, 2, 3, // Bottom side
+        4, 6, 5, // Left side
+        7, 9, 8, // Non-facing side
+        10, 12, 11, // Right side
+        13, 15, 14 // Facing side
     };
     /*
     GLfloat lightVertices[] = 
     {
-        -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  0.0f, 0.0f,
-         0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f, 0.0f,
-         0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f, 1.0f,
-         0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,  1.0f, 1.0f,
+        -0.1f, -0.1f,  0.1f,
+        0.1f, -0.1f,  0.1f,
+        0.1f,  0.1f,  0.1f,
+        -0.1f,  0.1f,  0.1f
     };
 
     GLuint lightIndices[] = {

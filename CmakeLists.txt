@@ -14,6 +14,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
 include_directories(${CMAKE_SOURCE_DIR}/include)
 include_directories(${CMAKE_SOURCE_DIR}/include/stb)
 include_directories(${CMAKE_SOURCE_DIR}/include/glm-0.9.9.7/glm)
+include_directories(${CMAKE_SOURCE_DIR}/include/headers)
 
 
 file(GLOB SOURCES "src/*.cpp")

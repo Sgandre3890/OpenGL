@@ -8,9 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/EBO.cpp" "CMakeFiles/out.dir/src/EBO.cpp.obj" "gcc" "CMakeFiles/out.dir/src/EBO.cpp.obj.d"
+  "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/VAO.cpp" "CMakeFiles/out.dir/src/VAO.cpp.obj" "gcc" "CMakeFiles/out.dir/src/VAO.cpp.obj.d"
+  "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/VBO.cpp" "CMakeFiles/out.dir/src/VBO.cpp.obj" "gcc" "CMakeFiles/out.dir/src/VBO.cpp.obj.d"
   "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/camera.cpp" "CMakeFiles/out.dir/src/camera.cpp.obj" "gcc" "CMakeFiles/out.dir/src/camera.cpp.obj.d"
   "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/main.cpp" "CMakeFiles/out.dir/src/main.cpp.obj" "gcc" "CMakeFiles/out.dir/src/main.cpp.obj.d"
   "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/shader.cpp" "CMakeFiles/out.dir/src/shader.cpp.obj" "gcc" "CMakeFiles/out.dir/src/shader.cpp.obj.d"
+  "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/texture.cpp" "CMakeFiles/out.dir/src/texture.cpp.obj" "gcc" "CMakeFiles/out.dir/src/texture.cpp.obj.d"
   "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/window.cpp" "CMakeFiles/out.dir/src/window.cpp.obj" "gcc" "CMakeFiles/out.dir/src/window.cpp.obj.d"
   )
 

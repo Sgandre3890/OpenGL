@@ -135,6 +135,78 @@ out/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/build
 .PHONY : out/fast
 
+src/EBO.obj: src/EBO.cpp.obj
+.PHONY : src/EBO.obj
+
+# target to build an object file
+src/EBO.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/EBO.cpp.obj
+.PHONY : src/EBO.cpp.obj
+
+src/EBO.i: src/EBO.cpp.i
+.PHONY : src/EBO.i
+
+# target to preprocess a source file
+src/EBO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/EBO.cpp.i
+.PHONY : src/EBO.cpp.i
+
+src/EBO.s: src/EBO.cpp.s
+.PHONY : src/EBO.s
+
+# target to generate assembly for a file
+src/EBO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/EBO.cpp.s
+.PHONY : src/EBO.cpp.s
+
+src/VAO.obj: src/VAO.cpp.obj
+.PHONY : src/VAO.obj
+
+# target to build an object file
+src/VAO.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/VAO.cpp.obj
+.PHONY : src/VAO.cpp.obj
+
+src/VAO.i: src/VAO.cpp.i
+.PHONY : src/VAO.i
+
+# target to preprocess a source file
+src/VAO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/VAO.cpp.i
+.PHONY : src/VAO.cpp.i
+
+src/VAO.s: src/VAO.cpp.s
+.PHONY : src/VAO.s
+
+# target to generate assembly for a file
+src/VAO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/VAO.cpp.s
+.PHONY : src/VAO.cpp.s
+
+src/VBO.obj: src/VBO.cpp.obj
+.PHONY : src/VBO.obj
+
+# target to build an object file
+src/VBO.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/VBO.cpp.obj
+.PHONY : src/VBO.cpp.obj
+
+src/VBO.i: src/VBO.cpp.i
+.PHONY : src/VBO.i
+
+# target to preprocess a source file
+src/VBO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/VBO.cpp.i
+.PHONY : src/VBO.cpp.i
+
+src/VBO.s: src/VBO.cpp.s
+.PHONY : src/VBO.s
+
+# target to generate assembly for a file
+src/VBO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/VBO.cpp.s
+.PHONY : src/VBO.cpp.s
+
 src/camera.obj: src/camera.cpp.obj
 .PHONY : src/camera.obj
 
@@ -207,6 +279,30 @@ src/shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/shader.cpp.s
 .PHONY : src/shader.cpp.s
 
+src/texture.obj: src/texture.cpp.obj
+.PHONY : src/texture.obj
+
+# target to build an object file
+src/texture.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/texture.cpp.obj
+.PHONY : src/texture.cpp.obj
+
+src/texture.i: src/texture.cpp.i
+.PHONY : src/texture.i
+
+# target to preprocess a source file
+src/texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/texture.cpp.i
+.PHONY : src/texture.cpp.i
+
+src/texture.s: src/texture.cpp.s
+.PHONY : src/texture.s
+
+# target to generate assembly for a file
+src/texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/texture.cpp.s
+.PHONY : src/texture.cpp.s
+
 src/window.obj: src/window.cpp.obj
 .PHONY : src/window.obj
 
@@ -241,6 +337,15 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... out
+	@echo ... src/EBO.obj
+	@echo ... src/EBO.i
+	@echo ... src/EBO.s
+	@echo ... src/VAO.obj
+	@echo ... src/VAO.i
+	@echo ... src/VAO.s
+	@echo ... src/VBO.obj
+	@echo ... src/VBO.i
+	@echo ... src/VBO.s
 	@echo ... src/camera.obj
 	@echo ... src/camera.i
 	@echo ... src/camera.s
@@ -250,6 +355,9 @@ help:
 	@echo ... src/shader.obj
 	@echo ... src/shader.i
 	@echo ... src/shader.s
+	@echo ... src/texture.obj
+	@echo ... src/texture.i
+	@echo ... src/texture.s
 	@echo ... src/window.obj
 	@echo ... src/window.i
 	@echo ... src/window.s

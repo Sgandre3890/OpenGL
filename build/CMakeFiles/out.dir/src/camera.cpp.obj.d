@@ -1,6 +1,6 @@
 CMakeFiles/out.dir/src/camera.cpp.obj: \
  C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\camera.cpp \
- C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\camera.h \
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/camera.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glad/glad.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/KHR/khrplatform.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
@@ -286,7 +286,7 @@ CMakeFiles/out.dir/src/camera.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/uses_allocator.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/uses_allocator_args.h \
  C:/msys64/ucrt64/include/c++/14.2.0/tuple \
- C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\shader.h \
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/shader.h \
  C:/msys64/ucrt64/include/c++/14.2.0/string \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/stringfwd.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/char_traits.h \
