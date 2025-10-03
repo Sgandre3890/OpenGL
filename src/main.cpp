@@ -14,6 +14,7 @@ int main()
     // Vertex data
     // Each vertex: position (3), color (3), texcoord (2), normal (3)
     // stride = 11 floats
+
     GLfloat vertices[] =
     { //     COORDINATES     /        COLORS          /    TexCoord   /        NORMALS       //
         -0.5f, 0.0f,  0.5f,     0.83f, 0.70f, 0.44f, 	 0.0f, 0.0f,      0.0f, -1.0f, 0.0f, // Bottom side
@@ -48,6 +49,7 @@ int main()
         10, 12, 11, // Right side
         13, 15, 14 // Facing side
     };
+    
     /*
     GLfloat lightVertices[] = 
     {
@@ -64,46 +66,22 @@ int main()
     */
 
 
-
-
-    unsigned int VBO, VAO, EBO;
-    glGenVertexArrays(1, &VAO);
-    glGenBuffers(1, &VBO);
-    glGenBuffers(1, &EBO);
-
-    glBindVertexArray(VAO);
-
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-    
-    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
-
-    // stride = 11 floats
-    GLsizei stride = 11 * sizeof(float);
-
-    // Position
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, stride, (void*)0);
-    glEnableVertexAttribArray(0);
-
-    // Color
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, stride, (void*)(3 * sizeof(float)));
-    glEnableVertexAttribArray(1);
-
-    // TexCoord
-    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, stride, (void*)(6 * sizeof(float)));
-    glEnableVertexAttribArray(2);
-
-    // Normal
-    glVertexAttribPointer(3, 3, GL_FLOAT, GL_FALSE, stride, (void*)(8 * sizeof(float)));
-    glEnableVertexAttribArray(3);
-
-    // Unbind VAO (allowed), but *do not* unbind the element array buffer while VAO is bound.
-    // glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);   
-    glBindVertexArray(0);
-
-    // It's OK to unbind the VBO if you want:
-    glBindBuffer(GL_ARRAY_BUFFER, 0);
+    VAO VAO1;
+	VAO1.Bind();
+    float stride = 11 * sizeof(float);
+	// Generates Vertex Buffer Object and links it to vertices
+	VBO VBO1(vertices, sizeof(vertices));
+	// Generates Element Buffer Object and links it to indices
+	EBO EBO1(indices, sizeof(indices));
+	// Links VBO attributes such as coordinates and colors to VAO
+	VAO1.LinkAttrib(VBO1, 0, 3, GL_FLOAT, stride, (void*)0);
+	VAO1.LinkAttrib(VBO1, 1, 3, GL_FLOAT, stride, (void*)(3 * sizeof(float)));
+	VAO1.LinkAttrib(VBO1, 2, 2, GL_FLOAT, stride, (void*)(6 * sizeof(float)));
+	VAO1.LinkAttrib(VBO1, 3, 3, GL_FLOAT, stride, (void*)(8 * sizeof(float)));
+	// Unbind all to prevent accidentally modifying them
+	VAO1.Unbind();
+	VBO1.Unbind();
+	EBO1.Unbind();
 
     // Importing texture
     stbi_set_flip_vertically_on_load(true);
@@ -159,8 +137,6 @@ int main()
 
         shader.use();
 
-        
-
         //Inputs
         camera.Inputs(Window::window);
         //Camera matrix
@@ -171,7 +147,7 @@ int main()
         glBindTexture(GL_TEXTURE_2D, texture);
 
         // Bind the vertex array object and draw the triangle
-        glBindVertexArray(VAO);
+        glBindVertexArray(VAO1.ID);
         glDrawElements(GL_TRIANGLES, sizeof(indices) / sizeof(int), GL_UNSIGNED_INT, 0);
 
 
@@ -181,8 +157,8 @@ int main()
     }
 
     glDeleteTextures(1, &texture);
-    glDeleteVertexArrays(1, &VAO);
-    glDeleteBuffers(1, &VBO);
+    glDeleteVertexArrays(1, &VAO1.ID);
+    glDeleteBuffers(1, &VBO1.ID);
 
     Window::terminateWindow();
     return 0;
