@@ -82,44 +82,12 @@ int main()
 	VAO1.Unbind();
 	VBO1.Unbind();
 	EBO1.Unbind();
-
-    // Importing texture
-    stbi_set_flip_vertically_on_load(true);
-
-    int widthImg, heightImg, numColCh;
-    unsigned char* bytes = stbi_load("./include/Textures/marble.jpg", &widthImg, &heightImg, &numColCh, 0);
-    if (!bytes) {
-        std::cerr << "Failed to load texture: ./include/Textures/marble.jpg\n";
-        return -1;  
-    } else {
-        std::cout << "Texture loaded: " << widthImg << "x" << heightImg << " with " << numColCh << " channels.\n";
-    }
-
-    GLuint texture;
-    glGenTextures(1, &texture);
-    glActiveTexture(GL_TEXTURE0);
-    glBindTexture(GL_TEXTURE_2D, texture); 
-
-    // texture settings 
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST_MIPMAP_NEAREST);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-
-    // Choose the format of the texture based on the number of color channels
-    // If there are 4 color channels, use GL_RGBA, otherwise use GL_RGB
-    GLenum format = (numColCh == 4 ? GL_RGBA : GL_RGB);
     
-    // Upload the pixel data to OpenGL
-    glTexImage2D(GL_TEXTURE_2D, 0, format, widthImg, heightImg, 0, format, GL_UNSIGNED_BYTE, bytes);
-    
-    // Generate mipmaps for the texture
-    glGenerateMipmap(GL_TEXTURE_2D);
+    // Texture
+	Texture Texture("./include/Textures/marble.jpg", GL_TEXTURE_2D, GL_TEXTURE0, GL_RGB, GL_UNSIGNED_BYTE);
+    Texture::texUnit(shader, "marble", 0);
+    Texture::Bind();
 
-    // Free the memory allocated for the image data
-    stbi_image_free(bytes);
-
-    // Unbind the texture
     glEnable(GL_DEPTH_TEST);
 
     //Camera
@@ -156,9 +124,13 @@ int main()
         glfwPollEvents();
     }
 
-    glDeleteTextures(1, &texture);
-    glDeleteVertexArrays(1, &VAO1.ID);
-    glDeleteBuffers(1, &VBO1.ID);
+
+    // Delete all the objects we've created
+	VAO1.Delete();
+	VBO1.Delete();
+	EBO1.Delete();
+	brickTex.Delete();
+	
 
     Window::terminateWindow();
     return 0;

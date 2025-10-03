@@ -1,4 +1,4 @@
-#include"texture.h"
+#include "master.h"
 
 Texture::Texture(const char* image, GLenum texType, GLenum slot, GLenum format, GLenum pixelType)
 {
@@ -11,6 +11,11 @@ Texture::Texture(const char* image, GLenum texType, GLenum slot, GLenum format, 
 	stbi_set_flip_vertically_on_load(true);
 	// Reads the image from a file and stores it in bytes
 	unsigned char* bytes = stbi_load(image, &widthImg, &heightImg, &numColCh, 0);
+    if (!bytes) {
+        std::cerr << "Failed to load texture: ./include/Textures/marble.jpg\n"; 
+    } else {
+        std::cout << "Texture loaded: " << widthImg << "x" << heightImg << " with " << numColCh << " channels.\n";
+    }
 
 	// Generates an OpenGL texture object
 	glGenTextures(1, &ID);

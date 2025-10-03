@@ -369,4 +369,6 @@ CMakeFiles/out.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/vector.tcc \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/VBO.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/EBO.h \
- C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/VAO.h
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/VAO.h \
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/texture.h \
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/stb/stb_image.h

@@ -15,4 +15,5 @@
 #include "VBO.h"
 #include "EBO.h"
 #include "VAO.h"
+#include "texture.h"
 #endif
