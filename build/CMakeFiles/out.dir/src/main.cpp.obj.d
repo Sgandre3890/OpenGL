@@ -161,21 +161,11 @@ CMakeFiles/out.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/tr1/riemann_zeta.tcc \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/window.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/shader.h \
- C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/stb/stb_image.h \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
- C:/msys64/ucrt64/include/stdarg.h \
- C:/msys64/ucrt64/include/_mingw_stdarg.h \
- C:/msys64/ucrt64/include/string.h \
- C:/msys64/ucrt64/include/sec_api/string_s.h \
- C:/msys64/ucrt64/include/c++/14.2.0/math.h \
- C:/msys64/ucrt64/include/assert.h \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/emmintrin.h \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xmmintrin.h \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mmintrin.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glm-0.9.9.7/glm/glm/glm.hpp \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glm-0.9.9.7/glm/glm/detail/_fixes.hpp \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glm-0.9.9.7/glm/glm/detail/setup.hpp \
  C:/msys64/ucrt64/include/c++/14.2.0/cassert \
+ C:/msys64/ucrt64/include/assert.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glm-0.9.9.7/glm/glm/simd/platform.h \
  C:/msys64/ucrt64/include/c++/14.2.0/cstdint \
  C:/msys64/ucrt64/include/c++/14.2.0/climits \
@@ -360,6 +350,8 @@ CMakeFiles/out.dir/src/main.cpp.obj: \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glm-0.9.9.7/glm/glm/ext/vector_uint1.hpp \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glm-0.9.9.7/glm/glm/ext/vector_uint1_precision.hpp \
  C:/msys64/ucrt64/include/c++/14.2.0/cstring \
+ C:/msys64/ucrt64/include/string.h \
+ C:/msys64/ucrt64/include/sec_api/string_s.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glm-0.9.9.7/glm/glm/gtc/type_ptr.inl \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/camera.h \
  C:/msys64/ucrt64/include/c++/14.2.0/vector \

@@ -84,9 +84,9 @@ int main()
 	EBO1.Unbind();
     
     // Texture
-	Texture Texture("./include/Textures/marble.jpg", GL_TEXTURE_2D, GL_TEXTURE0, GL_RGB, GL_UNSIGNED_BYTE);
-    Texture::texUnit(shader, "marble", 0);
-    Texture::Bind();
+	Texture marble("./include/Textures/marble.jpg", GL_TEXTURE_2D, GL_TEXTURE0, GL_RGB, GL_UNSIGNED_BYTE);
+    marble.texUnit(shader, "tex0", 0);
+    
 
     glEnable(GL_DEPTH_TEST);
 
@@ -111,11 +111,12 @@ int main()
         camera.Matrix(shader, "ViewMatrix");
         camera.updateMatrix(45.0f, 0.1f, 100.0f);
         //Textures:
-        glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, texture);
+        
+        marble.Bind();
 
         // Bind the vertex array object and draw the triangle
-        glBindVertexArray(VAO1.ID);
+        VAO1.Bind();
+
         glDrawElements(GL_TRIANGLES, sizeof(indices) / sizeof(int), GL_UNSIGNED_INT, 0);
 
 
@@ -129,7 +130,7 @@ int main()
 	VAO1.Delete();
 	VBO1.Delete();
 	EBO1.Delete();
-	brickTex.Delete();
+    marble.Delete();
 	
 
     Window::terminateWindow();

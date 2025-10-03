@@ -1,4 +1,6 @@
 #include "master.h"
+#define STB_IMAGE_IMPLEMENTATION
+#include "stb/stb_image.h"
 
 Texture::Texture(const char* image, GLenum texType, GLenum slot, GLenum format, GLenum pixelType)
 {
@@ -11,12 +13,12 @@ Texture::Texture(const char* image, GLenum texType, GLenum slot, GLenum format, 
 	stbi_set_flip_vertically_on_load(true);
 	// Reads the image from a file and stores it in bytes
 	unsigned char* bytes = stbi_load(image, &widthImg, &heightImg, &numColCh, 0);
-    if (!bytes) {
-        std::cerr << "Failed to load texture: ./include/Textures/marble.jpg\n"; 
-    } else {
-        std::cout << "Texture loaded: " << widthImg << "x" << heightImg << " with " << numColCh << " channels.\n";
-    }
-
+	if (!bytes) {
+		std::cerr << "Failed to load texture: " << image << std::endl;
+		// You can also include the error message returned by stbi_load
+		std::cerr << "Error: " << stbi_failure_reason() << std::endl;
+		return;
+	}
 	// Generates an OpenGL texture object
 	glGenTextures(1, &ID);
 	// Assigns the texture to a Texture Unit
@@ -35,7 +37,7 @@ Texture::Texture(const char* image, GLenum texType, GLenum slot, GLenum format, 
 	// float flatColor[] = {1.0f, 1.0f, 1.0f, 1.0f};
 	// glTexParameterfv(GL_TEXTURE_2D, GL_TEXTURE_BORDER_COLOR, flatColor);
 
-	// Assigns the image to the OpenGL Texture objects
+	// Assigns the image to the OpenGL Texture object
 	glTexImage2D(texType, 0, GL_RGBA, widthImg, heightImg, 0, format, pixelType, bytes);
 	// Generates MipMaps
 	glGenerateMipmap(texType);
