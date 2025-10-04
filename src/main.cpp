@@ -8,72 +8,50 @@ int main()
     if (Window::initializeWindow(SCR_WIDTH, SCR_HEIGHT, "OpenGL") != 0)
         return -1;
 
-    GLfloat vertices[] =
-    { //     COORDINATES     /        COLORS          /    TexCoord   /        NORMALS       //
-        -0.5f, 0.0f,  0.5f,     0.83f, 0.70f, 0.44f, 	 0.0f, 0.0f,      0.0f, -1.0f, 0.0f, // Bottom side
-        -0.5f, 0.0f, -0.5f,     0.83f, 0.70f, 0.44f,	 0.0f, 5.0f,      0.0f, -1.0f, 0.0f, // Bottom side
-        0.5f, 0.0f, -0.5f,     0.83f, 0.70f, 0.44f,	 5.0f, 5.0f,      0.0f, -1.0f, 0.0f, // Bottom side
-        0.5f, 0.0f,  0.5f,     0.83f, 0.70f, 0.44f,	 5.0f, 0.0f,      0.0f, -1.0f, 0.0f, // Bottom side
+	// Vertices coordinates
+	GLfloat vertices[] =
+	{ //     COORDINATES     /        COLORS        /    TexCoord    /       NORMALS     //
+		-1.0f, 0.0f,  1.0f,		0.0f, 0.0f, 0.0f,		0.0f, 0.0f,		0.0f, 1.0f, 0.0f,
+		-1.0f, 0.0f, -1.0f,		0.0f, 0.0f, 0.0f,		0.0f, 1.0f,		0.0f, 1.0f, 0.0f,
+		1.0f, 0.0f, -1.0f,		0.0f, 0.0f, 0.0f,		1.0f, 1.0f,		0.0f, 1.0f, 0.0f,
+		1.0f, 0.0f,  1.0f,		0.0f, 0.0f, 0.0f,		1.0f, 0.0f,		0.0f, 1.0f, 0.0f
+	};
 
-        -0.5f, 0.0f,  0.5f,     0.83f, 0.70f, 0.44f, 	 0.0f, 0.0f,     -0.8f, 0.5f,  0.0f, // Left Side
-        -0.5f, 0.0f, -0.5f,     0.83f, 0.70f, 0.44f,	 5.0f, 0.0f,     -0.8f, 0.5f,  0.0f, // Left Side
-        0.0f, 0.8f,  0.0f,     0.92f, 0.86f, 0.76f,	 2.5f, 5.0f,     -0.8f, 0.5f,  0.0f, // Left Side
+	// Indices for vertices order
+	GLuint indices[] =
+	{
+		0, 1, 2,
+		0, 2, 3
+	};
 
-        -0.5f, 0.0f, -0.5f,     0.83f, 0.70f, 0.44f,	 5.0f, 0.0f,      0.0f, 0.5f, -0.8f, // Non-facing side
-        0.5f, 0.0f, -0.5f,     0.83f, 0.70f, 0.44f,	 0.0f, 0.0f,      0.0f, 0.5f, -0.8f, // Non-facing side
-        0.0f, 0.8f,  0.0f,     0.92f, 0.86f, 0.76f,	 2.5f, 5.0f,      0.0f, 0.5f, -0.8f, // Non-facing side
+	GLfloat lightVertices[] =
+	{ //     COORDINATES     //
+		-0.1f, -0.1f,  0.1f,
+		-0.1f, -0.1f, -0.1f,
+		0.1f, -0.1f, -0.1f,
+		0.1f, -0.1f,  0.1f,
+		-0.1f,  0.1f,  0.1f,
+		-0.1f,  0.1f, -0.1f,
+		0.1f,  0.1f, -0.1f,
+		0.1f,  0.1f,  0.1f
+	};
 
-        0.5f, 0.0f, -0.5f,     0.83f, 0.70f, 0.44f,	 0.0f, 0.0f,      0.8f, 0.5f,  0.0f, // Right side
-        0.5f, 0.0f,  0.5f,     0.83f, 0.70f, 0.44f,	 5.0f, 0.0f,      0.8f, 0.5f,  0.0f, // Right side
-        0.0f, 0.8f,  0.0f,     0.92f, 0.86f, 0.76f,	 2.5f, 5.0f,      0.8f, 0.5f,  0.0f, // Right side
-
-        0.5f, 0.0f,  0.5f,     0.83f, 0.70f, 0.44f,	 5.0f, 0.0f,      0.0f, 0.5f,  0.8f, // Facing side
-        -0.5f, 0.0f,  0.5f,     0.83f, 0.70f, 0.44f, 	 0.0f, 0.0f,      0.0f, 0.5f,  0.8f, // Facing side
-        0.0f, 0.8f,  0.0f,     0.92f, 0.86f, 0.76f,	 2.5f, 5.0f,      0.0f, 0.5f,  0.8f  // Facing side
-    };
-
-    // Indices for vertices order
-    GLuint indices[] =
-    {
-        0, 1, 2, // Bottom side
-        0, 2, 3, // Bottom side
-        4, 6, 5, // Left side
-        7, 9, 8, // Non-facing side
-        10, 12, 11, // Right side
-        13, 15, 14 // Facing side
-    };
-
-    GLfloat lightVertices[] =
-    { //     COORDINATES     //
-        -0.1f, -0.1f,  0.1f,
-        -0.1f, -0.1f, -0.1f,
-        0.1f, -0.1f, -0.1f,
-        0.1f, -0.1f,  0.1f,
-        -0.1f,  0.1f,  0.1f,
-        -0.1f,  0.1f, -0.1f,
-        0.1f,  0.1f, -0.1f,
-        0.1f,  0.1f,  0.1f
-    };
-
-    GLuint lightIndices[] =
-    {
-        0, 1, 2,
-        0, 2, 3,
-        0, 4, 7,
-        0, 7, 3,
-        3, 7, 6,
-        3, 6, 2,
-        2, 6, 5,
-        2, 5, 1,
-        1, 5, 4,
-        1, 4, 0,
-        4, 5, 6,
-        4, 6, 7
-    };
-
-
-    // Generates Shader object using shaders default.vert and default.frag
-	Shader shader("include/shaders/default.vert", "include/shaders/default.frag");
+	GLuint lightIndices[] =
+	{
+		0, 1, 2,
+		0, 2, 3,
+		0, 4, 7,
+		0, 7, 3,
+		3, 7, 6,
+		3, 6, 2,
+		2, 6, 5,
+		2, 5, 1,
+		1, 5, 4,
+		1, 4, 0,
+		4, 5, 6,
+		4, 6, 7
+	};
+    
 	// Generates Vertex Array Object and binds it
 	VAO VAO1;
 	VAO1.Bind();
@@ -92,6 +70,9 @@ int main()
 	EBO1.Unbind();
 
 
+	// Generates Shader object using shaders default.vert and default.frag
+	Shader shader("include/shaders/default.vert", "include/shaders/default.frag");
+
 	// Shader for light cube
 	Shader lightShader("include/shaders/light.vert", "include/shaders/light.frag");
 	// Generates Vertex Array Object and binds it
@@ -108,34 +89,40 @@ int main()
 	lightVBO.Unbind();
 	lightEBO.Unbind();
 
-
-
+	// Set light color and position
+	// Light color is white (1.0f, 1.0f, 1.0f, 1.0f)
+	// Light position is (0.5f, 0.5f, 0.5f)
 	glm::vec4 lightColor = glm::vec4(1.0f, 1.0f, 1.0f, 1.0f);
-	glm::vec3 lightPos = glm::vec3(0.5f, 0.5f, 0.5f);
+ 	glm::vec3 lightPos = glm::vec3(1.0f, 1.0f, 1.0f);
+
+	// Set light model matrix
+	// Translate light position to the light model matrix
 	glm::mat4 lightModel = glm::mat4(1.0f);
 	lightModel = glm::translate(lightModel, lightPos);
 
+	// Set pyramid model matrix
+	// Translate pyramid position to the pyramid model matrix
+	// Pyramide position is (0.0f, 0.0f, 0.0f)
 	glm::vec3 pyramidPos = glm::vec3(0.0f, 0.0f, 0.0f);
-	glm::mat4 pyramidModel = glm::mat4(1.0f);
+ 	glm::mat4 pyramidModel = glm::mat4(1.0f);
 	pyramidModel = glm::translate(pyramidModel, pyramidPos);
 
-
+	// Use light shader and set light model matrix and light color
 	lightShader.use();
 	glUniformMatrix4fv(glGetUniformLocation(lightShader.ID, "model"), 1, GL_FALSE, glm::value_ptr(lightModel));
 	glUniform4f(glGetUniformLocation(lightShader.ID, "lightColor"), lightColor.x, lightColor.y, lightColor.z, lightColor.w);
+	
+
+	// Use main shader and set pyramid model matrix, light color, and light position
 	shader.use();
 	glUniformMatrix4fv(glGetUniformLocation(shader.ID, "model"), 1, GL_FALSE, glm::value_ptr(pyramidModel));
 	glUniform4f(glGetUniformLocation(shader.ID, "lightColor"), lightColor.x, lightColor.y, lightColor.z, lightColor.w);
 	glUniform3f(glGetUniformLocation(shader.ID, "lightPos"), lightPos.x, lightPos.y, lightPos.z);
-
-
-
     
     // Texture
-	Texture brick("./include/Textures/brick.png", GL_TEXTURE_2D, GL_TEXTURE0, GL_RGB, GL_UNSIGNED_BYTE);
+	Texture brick("./include/Textures/planks.png", GL_TEXTURE_2D, GL_TEXTURE0, GL_RGB, GL_UNSIGNED_BYTE);
     brick.texUnit(shader, "tex0", 0);
     
-
     glEnable(GL_DEPTH_TEST);
 
     //Camera
@@ -153,7 +140,6 @@ int main()
 		camera.Inputs(Window::window);
 		// Updates and exports the camera matrix to the Vertex Shader
 		camera.updateMatrix(45.0f, 0.1f, 100.0f);
-
 
 		// Tells OpenGL which Shader Program we want to use
 		shader.use();
@@ -179,6 +165,8 @@ int main()
 		// Draw primitives, number of indices, datatype of indices, index of indices
 		glDrawElements(GL_TRIANGLES, sizeof(lightIndices) / sizeof(int), GL_UNSIGNED_INT, 0);
 
+		glfwSwapInterval(1); // Enable V-Sync (limit FPS to monitor refresh rate)
+		//glfwSwapInterval(0); // Disable V-Sync (no FPS limit, runs as fast as possible)
 
 		// Swap the back buffer with the front buffer
 		glfwSwapBuffers(Window::window);

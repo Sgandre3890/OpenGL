@@ -363,6 +363,7 @@ CMakeFiles/out.dir/src/texture.cpp.obj: \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/EBO.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/VAO.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/texture.h \
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/master.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/stb/stb_image.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
  C:/msys64/ucrt64/include/stdarg.h \
