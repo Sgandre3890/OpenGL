@@ -120,8 +120,11 @@ int main()
 	glUniform3f(glGetUniformLocation(shader.ID, "lightPos"), lightPos.x, lightPos.y, lightPos.z);
     
     // Texture
-	Texture brick("./include/Textures/planks.png", GL_TEXTURE_2D, GL_TEXTURE0, GL_RGB, GL_UNSIGNED_BYTE);
-    brick.texUnit(shader, "tex0", 0);
+	Texture planks("./include/Textures/planks.png", GL_TEXTURE_2D, 0, GL_RGBA, GL_UNSIGNED_BYTE);
+    planks.texUnit(shader, "tex0", 0);
+
+	Texture planksSpec("./include/Textures/planksSpec.png", GL_TEXTURE_2D, 1, GL_RED, GL_UNSIGNED_BYTE);
+	planksSpec.texUnit(shader, "tex1", 1);
     
     glEnable(GL_DEPTH_TEST);
 
@@ -148,7 +151,8 @@ int main()
 		// Export the camMatrix to the Vertex Shader of the pyramid
 		camera.Matrix(shader, "camMatrix");
 		// Binds texture so that is appears in rendering
-		brick.Bind();
+		planks.Bind();
+		planksSpec.Bind();
 		// Bind the VAO so OpenGL knows to use it
 		VAO1.Bind();
 		// Draw primitives, number of indices, datatype of indices, index of indices
@@ -179,7 +183,8 @@ int main()
 	VAO1.Delete();
 	VBO1.Delete();
 	EBO1.Delete();
-    brick.Delete();
+    planks.Delete();
+	planksSpec.Delete();
     lightVAO.Delete();
 	lightVBO.Delete();
 	lightEBO.Delete();
