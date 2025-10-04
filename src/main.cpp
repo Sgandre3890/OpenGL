@@ -131,6 +131,9 @@ int main()
     //Camera
     Camera camera(SCR_WIDTH, SCR_HEIGHT, glm::vec3(0.0f, 0.0f, 2.0f));
 
+	glfwSwapInterval(1); // Enable V-Sync (limit FPS to monitor refresh rate)
+	//glfwSwapInterval(0); // Disable V-Sync (no FPS limit, runs as fast as possible)
+
     // Main loop: handles rendering and event processing until the window is closed
     while (!glfwWindowShouldClose(Window::window))
     {
@@ -159,7 +162,6 @@ int main()
 		glDrawElements(GL_TRIANGLES, sizeof(indices) / sizeof(int), GL_UNSIGNED_INT, 0);
 
 
-
 		// Tells OpenGL which Shader Program we want to use
 		lightShader.use();
 		// Export the camMatrix to the Vertex Shader of the light cube
@@ -169,8 +171,7 @@ int main()
 		// Draw primitives, number of indices, datatype of indices, index of indices
 		glDrawElements(GL_TRIANGLES, sizeof(lightIndices) / sizeof(int), GL_UNSIGNED_INT, 0);
 
-		glfwSwapInterval(1); // Enable V-Sync (limit FPS to monitor refresh rate)
-		//glfwSwapInterval(0); // Disable V-Sync (no FPS limit, runs as fast as possible)
+		
 
 		// Swap the back buffer with the front buffer
 		glfwSwapBuffers(Window::window);
