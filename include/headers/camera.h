@@ -14,15 +14,15 @@ public:
     glm::vec3 Position;
     glm::vec3 Orientation;
     glm::vec3 Up = glm::vec3(0.0f, 1.0f, 0.0f);
-    glm::mat4 ViewMatrix = glm::mat4(1.0f);
+    glm::mat4 camMatrix = glm::mat4(1.0f);
 
     int SCR_WIDTH;
     int SCR_HEIGHT;
     
     bool firstClick = true;
 
-    float speed = 0.1f;
-    float sensitivity = 100.0f;
+    float speed = 0.05f;
+    float sensitivity = 80.0f;
 
     float yaw   = -90.0f; // facing -Z by default
     float pitch = 0.0f;
