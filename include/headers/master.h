@@ -14,4 +14,7 @@
 #include "EBO.h"
 #include "VAO.h"
 #include "texture.h"
+#include <string>
+#include <vector>
+#include "mesh.h"
 #endif

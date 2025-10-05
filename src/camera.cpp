@@ -51,6 +51,14 @@ void Camera::Inputs(GLFWwindow* window)
         double mouseX, mouseY;
         glfwGetCursorPos(window, &mouseX, &mouseY);
 
+        if (firstClick)
+        {
+            // Reset mouse to center on first click, no sudden snap
+            glfwSetCursorPos(window, SCR_WIDTH / 2, SCR_HEIGHT / 2);
+            firstClick = false;
+            return; // skip this frame
+        }
+
         // Calculate rotation amounts relative to screen center
         float rotX = sensitivity * (float)(mouseY - (SCR_HEIGHT / 2)) / (SCR_HEIGHT / 2);
         float rotY = sensitivity * (float)(mouseX - (SCR_WIDTH / 2)) / (SCR_WIDTH / 2);
@@ -60,7 +68,7 @@ void Camera::Inputs(GLFWwindow* window)
         glm::mat4 pitchMat = glm::rotate(glm::mat4(1.0f), glm::radians(-rotX), right);
         glm::vec3 newOrientation = glm::mat3(pitchMat) * Orientation;
 
-        // Clamp pitch: avoid looking too far up or down
+        // Clamp pitch
         float pitchAngle = glm::degrees(glm::asin(newOrientation.y));
         if (pitchAngle < 85.0f && pitchAngle > -85.0f)
             Orientation = newOrientation;
@@ -73,12 +81,14 @@ void Camera::Inputs(GLFWwindow* window)
         Orientation = glm::normalize(Orientation);
 
         // Recenter cursor
-        glfwSetCursorPos(window, (SCR_WIDTH / 2), (SCR_HEIGHT / 2));
+        glfwSetCursorPos(window, SCR_WIDTH / 2, SCR_HEIGHT / 2);
     }
     else
     {
         glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+        firstClick = true; // reset for next time
     }
 }
+
 
 

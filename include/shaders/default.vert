@@ -3,12 +3,11 @@
 // Positions/Coordinates
 layout (location = 0) in vec3 aPos;
 // Colors
-layout (location = 1) in vec3 aColor;
+layout (location = 1) in vec3 aNormal;
 // Texture Coordinates
-layout (location = 2) in vec2 aTex;
+layout (location = 2) in vec2 aColor;
 // Normals (not necessarily normalized)
-layout (location = 3) in vec3 aNormal;
-
+layout (location = 3) in vec3 aTex;
 
 // Outputs the color for the Fragment Shader
 out vec3 color;
