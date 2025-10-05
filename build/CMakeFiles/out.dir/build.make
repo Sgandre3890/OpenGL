@@ -176,11 +176,26 @@ CMakeFiles/out.dir/src/shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/out.dir/src/shader.cpp.s"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\shader.cpp -o CMakeFiles\out.dir\src\shader.cpp.s
 
+CMakeFiles/out.dir/src/stb.cpp.obj: CMakeFiles/out.dir/flags.make
+CMakeFiles/out.dir/src/stb.cpp.obj: CMakeFiles/out.dir/includes_CXX.rsp
+CMakeFiles/out.dir/src/stb.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/stb.cpp
+CMakeFiles/out.dir/src/stb.cpp.obj: CMakeFiles/out.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/out.dir/src/stb.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/out.dir/src/stb.cpp.obj -MF CMakeFiles\out.dir\src\stb.cpp.obj.d -o CMakeFiles\out.dir\src\stb.cpp.obj -c C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\stb.cpp
+
+CMakeFiles/out.dir/src/stb.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/out.dir/src/stb.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\stb.cpp > CMakeFiles\out.dir\src\stb.cpp.i
+
+CMakeFiles/out.dir/src/stb.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/out.dir/src/stb.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\stb.cpp -o CMakeFiles\out.dir\src\stb.cpp.s
+
 CMakeFiles/out.dir/src/texture.cpp.obj: CMakeFiles/out.dir/flags.make
 CMakeFiles/out.dir/src/texture.cpp.obj: CMakeFiles/out.dir/includes_CXX.rsp
 CMakeFiles/out.dir/src/texture.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/texture.cpp
 CMakeFiles/out.dir/src/texture.cpp.obj: CMakeFiles/out.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/out.dir/src/texture.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/out.dir/src/texture.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/out.dir/src/texture.cpp.obj -MF CMakeFiles\out.dir\src\texture.cpp.obj.d -o CMakeFiles\out.dir\src\texture.cpp.obj -c C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\texture.cpp
 
 CMakeFiles/out.dir/src/texture.cpp.i: cmake_force
@@ -195,7 +210,7 @@ CMakeFiles/out.dir/src/window.cpp.obj: CMakeFiles/out.dir/flags.make
 CMakeFiles/out.dir/src/window.cpp.obj: CMakeFiles/out.dir/includes_CXX.rsp
 CMakeFiles/out.dir/src/window.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/window.cpp
 CMakeFiles/out.dir/src/window.cpp.obj: CMakeFiles/out.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/out.dir/src/window.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/out.dir/src/window.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/out.dir/src/window.cpp.obj -MF CMakeFiles\out.dir\src\window.cpp.obj.d -o CMakeFiles\out.dir\src\window.cpp.obj -c C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\window.cpp
 
 CMakeFiles/out.dir/src/window.cpp.i: cmake_force
@@ -215,6 +230,7 @@ out_OBJECTS = \
 "CMakeFiles/out.dir/src/main.cpp.obj" \
 "CMakeFiles/out.dir/src/mesh.cpp.obj" \
 "CMakeFiles/out.dir/src/shader.cpp.obj" \
+"CMakeFiles/out.dir/src/stb.cpp.obj" \
 "CMakeFiles/out.dir/src/texture.cpp.obj" \
 "CMakeFiles/out.dir/src/window.cpp.obj"
 
@@ -228,6 +244,7 @@ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/main.cpp.obj
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/mesh.cpp.obj
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/shader.cpp.obj
+C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/stb.cpp.obj
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/texture.cpp.obj
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/window.cpp.obj
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/build.make
@@ -236,7 +253,7 @@ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: C:/Users/sgand/OneDrive
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/linkLibs.rsp
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/objects1.rsp
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\out.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\out.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\out.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

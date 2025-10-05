@@ -55,9 +55,11 @@ int main()
 	// Texture data
 	Texture textures[]
 	{
-		Texture(("planks.png"), "diffuse", 0, GL_RGBA, GL_UNSIGNED_BYTE),
-		Texture(("planksSpec.png"), "specular", 1, GL_RED, GL_UNSIGNED_BYTE)
+		Texture(("include/Textures/planks.png"), "diffuse", 0, GL_RGBA, GL_UNSIGNED_BYTE),
+		Texture(("include/Textures/planksSpec.png"), "specular", 1, GL_RED, GL_UNSIGNED_BYTE)
 	};
+
+	
 
 
 

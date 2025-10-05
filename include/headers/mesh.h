@@ -4,8 +4,9 @@
 #include<string>
 #include"VAO.h"
 #include"EBO.h"
-#include"Camera.h"
-#include"Texture.h"
+#include"camera.h"
+#include"texture.h"
+#include"window.h"
 
 class Mesh
 {

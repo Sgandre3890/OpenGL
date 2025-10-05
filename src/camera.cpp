@@ -44,6 +44,9 @@ void Camera::Inputs(GLFWwindow* window)
         Position -= Up * speed;
 
     // --- Mouse look ---
+    static double lastMouseX = SCR_WIDTH / 2.0;
+    static double lastMouseY = SCR_HEIGHT / 2.0;
+
     if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS)
     {
         glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
@@ -53,15 +56,24 @@ void Camera::Inputs(GLFWwindow* window)
 
         if (firstClick)
         {
-            // Reset mouse to center on first click, no sudden snap
-            glfwSetCursorPos(window, SCR_WIDTH / 2, SCR_HEIGHT / 2);
+            // Initialize last positions to avoid a sudden jump
+            lastMouseX = mouseX;
+            lastMouseY = mouseY;
             firstClick = false;
             return; // skip this frame
         }
 
-        // Calculate rotation amounts relative to screen center
-        float rotX = sensitivity * (float)(mouseY - (SCR_HEIGHT / 2)) / (SCR_HEIGHT / 2);
-        float rotY = sensitivity * (float)(mouseX - (SCR_WIDTH / 2)) / (SCR_WIDTH / 2);
+        // Calculate deltas (movement since last frame)
+        float deltaX = (float)(mouseX - lastMouseX);
+        float deltaY = (float)(mouseY - lastMouseY);
+
+        // Update last positions
+        lastMouseX = mouseX;
+        lastMouseY = mouseY;
+
+        // Apply sensitivity
+        float rotX = sensitivity * deltaY;
+        float rotY = sensitivity * deltaX;
 
         // Pitch: rotate around right axis
         glm::vec3 right = glm::normalize(glm::cross(Orientation, Up));
@@ -79,16 +91,15 @@ void Camera::Inputs(GLFWwindow* window)
 
         // Normalize to avoid drift
         Orientation = glm::normalize(Orientation);
-
-        // Recenter cursor
-        glfwSetCursorPos(window, SCR_WIDTH / 2, SCR_HEIGHT / 2);
     }
     else
     {
         glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
         firstClick = true; // reset for next time
     }
+
 }
+
 
 
 
