@@ -1,7 +1,5 @@
 #include "shader.h"
-#include <fstream>
-#include <sstream>
-#include <iostream>
+
 
 static std::string loadShaderSource(const char* filePath) {
     std::ifstream file;

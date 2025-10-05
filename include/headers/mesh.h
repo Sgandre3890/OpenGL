@@ -1,8 +1,11 @@
 #ifndef MESH_CLASS_H
 #define MESH_CLASS_H
 
-#include "master.h"
-
+#include<string>
+#include"VAO.h"
+#include"EBO.h"
+#include"Camera.h"
+#include"Texture.h"
 
 class Mesh
 {
@@ -19,4 +22,5 @@ public:
 	// Draws the mesh
 	void Draw(Shader& shader, Camera& camera);
 };
+
 #endif

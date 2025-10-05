@@ -1,7 +1,9 @@
 #ifndef VBO_CLASS_H
 #define VBO_CLASS_H
 
-#include "master.h"
+#include<glm/glm.hpp>
+#include<glad/glad.h>
+#include<vector>
 
 // Structure to standardize the vertices used in the meshes
 struct Vertex

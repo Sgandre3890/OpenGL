@@ -360,10 +360,10 @@ CMakeFiles/out.dir/src/texture.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_bvector.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/vector.tcc \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/VBO.h \
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/master.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/EBO.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/VAO.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/texture.h \
- C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/master.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/stb/stb_image.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdarg.h \
  C:/msys64/ucrt64/include/stdarg.h \
@@ -371,4 +371,5 @@ CMakeFiles/out.dir/src/texture.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/math.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/emmintrin.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/xmmintrin.h \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mmintrin.h
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mmintrin.h \
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/mesh.h

@@ -1,7 +1,8 @@
 #ifndef EBO_CLASS_H
 #define EBO_CLASS_H
 
-#include "master.h"
+#include<glad/glad.h>
+#include<vector>
 
 class EBO
 {

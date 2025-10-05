@@ -1,4 +1,4 @@
-#include "master.h"
+#include "mesh.h"
 
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 800;
@@ -75,9 +75,6 @@ int main()
 	// Create floor mesh
 	Mesh floor(verts, ind, tex);
 
-
-	// Shader for light cube
-	Shader lightShader("include/shaders/light.vert", "include/shaders/light.frag");
 	// Store mesh data in vectors for the mesh
 	std::vector <Vertex> lightVerts(lightVertices, lightVertices + sizeof(lightVertices) / sizeof(Vertex));
 	std::vector <GLuint> lightInd(lightIndices, lightIndices + sizeof(lightIndices) / sizeof(GLuint));
