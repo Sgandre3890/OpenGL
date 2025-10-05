@@ -255,6 +255,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/mesh.obj: src/mesh.cpp.obj
+.PHONY : src/mesh.obj
+
+# target to build an object file
+src/mesh.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/mesh.cpp.obj
+.PHONY : src/mesh.cpp.obj
+
+src/mesh.i: src/mesh.cpp.i
+.PHONY : src/mesh.i
+
+# target to preprocess a source file
+src/mesh.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/mesh.cpp.i
+.PHONY : src/mesh.cpp.i
+
+src/mesh.s: src/mesh.cpp.s
+.PHONY : src/mesh.s
+
+# target to generate assembly for a file
+src/mesh.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/mesh.cpp.s
+.PHONY : src/mesh.cpp.s
+
 src/shader.obj: src/shader.cpp.obj
 .PHONY : src/shader.obj
 
@@ -352,6 +376,9 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... src/mesh.obj
+	@echo ... src/mesh.i
+	@echo ... src/mesh.s
 	@echo ... src/shader.obj
 	@echo ... src/shader.i
 	@echo ... src/shader.s

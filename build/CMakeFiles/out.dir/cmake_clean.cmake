@@ -12,6 +12,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/out.dir/src/camera.cpp.obj.d"
   "CMakeFiles/out.dir/src/main.cpp.obj"
   "CMakeFiles/out.dir/src/main.cpp.obj.d"
+  "CMakeFiles/out.dir/src/mesh.cpp.obj"
+  "CMakeFiles/out.dir/src/mesh.cpp.obj.d"
   "CMakeFiles/out.dir/src/shader.cpp.obj"
   "CMakeFiles/out.dir/src/shader.cpp.obj.d"
   "CMakeFiles/out.dir/src/texture.cpp.obj"
