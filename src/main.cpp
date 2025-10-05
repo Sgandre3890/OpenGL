@@ -59,7 +59,7 @@ int main()
 		Texture(("include/Textures/planksSpec.png"), "specular", 1, GL_RED, GL_UNSIGNED_BYTE)
 	};
 
-	
+
 
 
 
@@ -120,6 +120,8 @@ int main()
 		glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
 		// Clean the back buffer and depth buffer
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+		Window::processInput(Window::window);
 
 		// Handles camera inputs
 		camera.Inputs(Window::window);

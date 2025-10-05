@@ -37,6 +37,12 @@
 },
 {
   "directory": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/out.dir/includes_CXX.rsp  -m64 -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\out.dir\\src\\model.cpp.obj -c C:\\Users\\sgand\\OneDrive\\Documents\\GitHub\\OpenGL\\src\\model.cpp",
+  "file": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/model.cpp",
+  "output": "CMakeFiles/out.dir/src/model.cpp.obj"
+},
+{
+  "directory": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/build",
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/out.dir/includes_CXX.rsp  -m64 -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\out.dir\\src\\shader.cpp.obj -c C:\\Users\\sgand\\OneDrive\\Documents\\GitHub\\OpenGL\\src\\shader.cpp",
   "file": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/shader.cpp",
   "output": "CMakeFiles/out.dir/src/shader.cpp.obj"

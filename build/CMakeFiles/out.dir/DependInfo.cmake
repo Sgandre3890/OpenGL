@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/camera.cpp" "CMakeFiles/out.dir/src/camera.cpp.obj" "gcc" "CMakeFiles/out.dir/src/camera.cpp.obj.d"
   "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/main.cpp" "CMakeFiles/out.dir/src/main.cpp.obj" "gcc" "CMakeFiles/out.dir/src/main.cpp.obj.d"
   "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/mesh.cpp" "CMakeFiles/out.dir/src/mesh.cpp.obj" "gcc" "CMakeFiles/out.dir/src/mesh.cpp.obj.d"
+  "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/model.cpp" "CMakeFiles/out.dir/src/model.cpp.obj" "gcc" "CMakeFiles/out.dir/src/model.cpp.obj.d"
   "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/shader.cpp" "CMakeFiles/out.dir/src/shader.cpp.obj" "gcc" "CMakeFiles/out.dir/src/shader.cpp.obj.d"
   "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/stb.cpp" "CMakeFiles/out.dir/src/stb.cpp.obj" "gcc" "CMakeFiles/out.dir/src/stb.cpp.obj.d"
   "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/texture.cpp" "CMakeFiles/out.dir/src/texture.cpp.obj" "gcc" "CMakeFiles/out.dir/src/texture.cpp.obj.d"
