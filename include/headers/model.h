@@ -1,11 +1,16 @@
 #ifndef MODEL_CLASS_H
 #define MODEL_CLASS_H
 
-#include<json/json.h>
+#include"json/json.h"
 #include"mesh.h"
+#include<glad/glad.h>
+#include<string>
+#include<fstream>
+#include<sstream>
+#include<iostream>
+#include<cerrno>
 
 using json = nlohmann::json;
-
 
 class Model
 {

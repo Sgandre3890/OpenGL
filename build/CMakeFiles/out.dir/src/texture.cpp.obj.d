@@ -1,6 +1,6 @@
 CMakeFiles/out.dir/src/texture.cpp.obj: \
  C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\texture.cpp \
- C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/texture.h \
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/Texture.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glad/glad.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/KHR/khrplatform.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \

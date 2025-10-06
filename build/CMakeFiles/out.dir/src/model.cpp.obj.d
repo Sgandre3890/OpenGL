@@ -1,5 +1,5 @@
-CMakeFiles/out.dir/src/main.cpp.obj: \
- C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\main.cpp \
+CMakeFiles/out.dir/src/model.cpp.obj: \
+ C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\model.cpp \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/model.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/json/json.h \
  C:/msys64/ucrt64/include/c++/14.2.0/algorithm \
