@@ -267,7 +267,6 @@ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/build.make
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/statLib/libglfw3WIN.a
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/statLib/libgladWIN.a
-C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/statLib/assimp.lib
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/linkLibs.rsp
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/objects1.rsp
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/link.txt

@@ -45,12 +45,6 @@
 				"parent" : 0
 			},
 			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 29,
-				"parent" : 0
-			},
-			{
 				"command" : 2,
 				"file" : 0,
 				"line" : 15,
@@ -94,23 +88,23 @@
 			"includes" : 
 			[
 				{
-					"backtrace" : 5,
+					"backtrace" : 4,
 					"path" : "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include"
 				},
 				{
-					"backtrace" : 6,
+					"backtrace" : 5,
 					"path" : "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/stb"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 6,
 					"path" : "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glm-0.9.9.7/glm"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 7,
 					"path" : "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers"
 				},
 				{
-					"backtrace" : 9,
+					"backtrace" : 8,
 					"path" : "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/json"
 				}
 			],
@@ -160,11 +154,6 @@
 			{
 				"backtrace" : 3,
 				"fragment" : "C:\\Users\\sgand\\OneDrive\\Documents\\GitHub\\OpenGL\\statLib\\libgladWIN.a",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 4,
-				"fragment" : "C:\\Users\\sgand\\OneDrive\\Documents\\GitHub\\OpenGL\\statLib\\assimp.lib",
 				"role" : "libraries"
 			},
 			{
