@@ -1,6 +1,6 @@
 CMakeFiles/out.dir/src/main.cpp.obj: \
  C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\main.cpp \
- C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/model.h \
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/Model.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/json/json.h \
  C:/msys64/ucrt64/include/c++/14.2.0/algorithm \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_algobase.h \
@@ -445,4 +445,4 @@ CMakeFiles/out.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/iostream \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/Texture.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/stb/stb_image.h \
- C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/window.h
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/Window.h

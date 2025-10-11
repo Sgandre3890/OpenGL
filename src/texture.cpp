@@ -11,6 +11,7 @@ Texture::Texture(const char* image, const char* texType, GLuint slot)
 	stbi_set_flip_vertically_on_load(true);
 	// Reads the image from a file and stores it in bytes
 	unsigned char* bytes = stbi_load(image, &widthImg, &heightImg, &numColCh, 0);
+
 	// Generates an OpenGL texture object
 	glGenTextures(1, &ID);
 	// Assigns the texture to a Texture Unit
@@ -88,10 +89,18 @@ void Texture::texUnit(Shader& shader, const char* uniform, GLuint unit)
 	// Gets the location of the uniform
 	GLuint texUni = glGetUniformLocation(shader.ID, uniform);
 	// Shader needs to be activated before changing the value of a uniform
-	shader.use();
+	shader.Activate();
 	// Sets the value of the uniform
 	glUniform1i(texUni, unit);
 }
+
+/**
+ * Binds the texture to the OpenGL context.
+ *
+ * This function is used to prepare the texture for use in the OpenGL
+ * pipeline. It should be called before drawing any objects that use this
+ * texture.
+ */
 
 void Texture::Bind()
 {

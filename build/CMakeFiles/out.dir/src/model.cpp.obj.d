@@ -1,6 +1,6 @@
-CMakeFiles/out.dir/src/model.cpp.obj: \
- C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\model.cpp \
- C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/model.h \
+CMakeFiles/out.dir/src/Model.cpp.obj: \
+ C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\Model.cpp \
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/Model.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/json/json.h \
  C:/msys64/ucrt64/include/c++/14.2.0/algorithm \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_algobase.h \

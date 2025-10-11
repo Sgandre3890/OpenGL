@@ -71,11 +71,26 @@ include CMakeFiles/out.dir/flags.make
 CMakeFiles/out.dir/codegen:
 .PHONY : CMakeFiles/out.dir/codegen
 
+CMakeFiles/out.dir/src/Camera.cpp.obj: CMakeFiles/out.dir/flags.make
+CMakeFiles/out.dir/src/Camera.cpp.obj: CMakeFiles/out.dir/includes_CXX.rsp
+CMakeFiles/out.dir/src/Camera.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/Camera.cpp
+CMakeFiles/out.dir/src/Camera.cpp.obj: CMakeFiles/out.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/out.dir/src/Camera.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/out.dir/src/Camera.cpp.obj -MF CMakeFiles\out.dir\src\Camera.cpp.obj.d -o CMakeFiles\out.dir\src\Camera.cpp.obj -c C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\Camera.cpp
+
+CMakeFiles/out.dir/src/Camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/out.dir/src/Camera.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\Camera.cpp > CMakeFiles\out.dir\src\Camera.cpp.i
+
+CMakeFiles/out.dir/src/Camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/out.dir/src/Camera.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\Camera.cpp -o CMakeFiles\out.dir\src\Camera.cpp.s
+
 CMakeFiles/out.dir/src/EBO.cpp.obj: CMakeFiles/out.dir/flags.make
 CMakeFiles/out.dir/src/EBO.cpp.obj: CMakeFiles/out.dir/includes_CXX.rsp
 CMakeFiles/out.dir/src/EBO.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/EBO.cpp
 CMakeFiles/out.dir/src/EBO.cpp.obj: CMakeFiles/out.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/out.dir/src/EBO.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/out.dir/src/EBO.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/out.dir/src/EBO.cpp.obj -MF CMakeFiles\out.dir\src\EBO.cpp.obj.d -o CMakeFiles\out.dir\src\EBO.cpp.obj -c C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\EBO.cpp
 
 CMakeFiles/out.dir/src/EBO.cpp.i: cmake_force
@@ -86,11 +101,56 @@ CMakeFiles/out.dir/src/EBO.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/out.dir/src/EBO.cpp.s"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\EBO.cpp -o CMakeFiles\out.dir\src\EBO.cpp.s
 
+CMakeFiles/out.dir/src/Mesh.cpp.obj: CMakeFiles/out.dir/flags.make
+CMakeFiles/out.dir/src/Mesh.cpp.obj: CMakeFiles/out.dir/includes_CXX.rsp
+CMakeFiles/out.dir/src/Mesh.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/Mesh.cpp
+CMakeFiles/out.dir/src/Mesh.cpp.obj: CMakeFiles/out.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/out.dir/src/Mesh.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/out.dir/src/Mesh.cpp.obj -MF CMakeFiles\out.dir\src\Mesh.cpp.obj.d -o CMakeFiles\out.dir\src\Mesh.cpp.obj -c C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\Mesh.cpp
+
+CMakeFiles/out.dir/src/Mesh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/out.dir/src/Mesh.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\Mesh.cpp > CMakeFiles\out.dir\src\Mesh.cpp.i
+
+CMakeFiles/out.dir/src/Mesh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/out.dir/src/Mesh.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\Mesh.cpp -o CMakeFiles\out.dir\src\Mesh.cpp.s
+
+CMakeFiles/out.dir/src/Model.cpp.obj: CMakeFiles/out.dir/flags.make
+CMakeFiles/out.dir/src/Model.cpp.obj: CMakeFiles/out.dir/includes_CXX.rsp
+CMakeFiles/out.dir/src/Model.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/Model.cpp
+CMakeFiles/out.dir/src/Model.cpp.obj: CMakeFiles/out.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/out.dir/src/Model.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/out.dir/src/Model.cpp.obj -MF CMakeFiles\out.dir\src\Model.cpp.obj.d -o CMakeFiles\out.dir\src\Model.cpp.obj -c C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\Model.cpp
+
+CMakeFiles/out.dir/src/Model.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/out.dir/src/Model.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\Model.cpp > CMakeFiles\out.dir\src\Model.cpp.i
+
+CMakeFiles/out.dir/src/Model.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/out.dir/src/Model.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\Model.cpp -o CMakeFiles\out.dir\src\Model.cpp.s
+
+CMakeFiles/out.dir/src/Texture.cpp.obj: CMakeFiles/out.dir/flags.make
+CMakeFiles/out.dir/src/Texture.cpp.obj: CMakeFiles/out.dir/includes_CXX.rsp
+CMakeFiles/out.dir/src/Texture.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/Texture.cpp
+CMakeFiles/out.dir/src/Texture.cpp.obj: CMakeFiles/out.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/out.dir/src/Texture.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/out.dir/src/Texture.cpp.obj -MF CMakeFiles\out.dir\src\Texture.cpp.obj.d -o CMakeFiles\out.dir\src\Texture.cpp.obj -c C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\Texture.cpp
+
+CMakeFiles/out.dir/src/Texture.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/out.dir/src/Texture.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\Texture.cpp > CMakeFiles\out.dir\src\Texture.cpp.i
+
+CMakeFiles/out.dir/src/Texture.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/out.dir/src/Texture.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\Texture.cpp -o CMakeFiles\out.dir\src\Texture.cpp.s
+
 CMakeFiles/out.dir/src/VAO.cpp.obj: CMakeFiles/out.dir/flags.make
 CMakeFiles/out.dir/src/VAO.cpp.obj: CMakeFiles/out.dir/includes_CXX.rsp
 CMakeFiles/out.dir/src/VAO.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/VAO.cpp
 CMakeFiles/out.dir/src/VAO.cpp.obj: CMakeFiles/out.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/out.dir/src/VAO.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/out.dir/src/VAO.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/out.dir/src/VAO.cpp.obj -MF CMakeFiles\out.dir\src\VAO.cpp.obj.d -o CMakeFiles\out.dir\src\VAO.cpp.obj -c C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\VAO.cpp
 
 CMakeFiles/out.dir/src/VAO.cpp.i: cmake_force
@@ -105,7 +165,7 @@ CMakeFiles/out.dir/src/VBO.cpp.obj: CMakeFiles/out.dir/flags.make
 CMakeFiles/out.dir/src/VBO.cpp.obj: CMakeFiles/out.dir/includes_CXX.rsp
 CMakeFiles/out.dir/src/VBO.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/VBO.cpp
 CMakeFiles/out.dir/src/VBO.cpp.obj: CMakeFiles/out.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/out.dir/src/VBO.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/out.dir/src/VBO.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/out.dir/src/VBO.cpp.obj -MF CMakeFiles\out.dir\src\VBO.cpp.obj.d -o CMakeFiles\out.dir\src\VBO.cpp.obj -c C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\VBO.cpp
 
 CMakeFiles/out.dir/src/VBO.cpp.i: cmake_force
@@ -116,26 +176,26 @@ CMakeFiles/out.dir/src/VBO.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/out.dir/src/VBO.cpp.s"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\VBO.cpp -o CMakeFiles\out.dir\src\VBO.cpp.s
 
-CMakeFiles/out.dir/src/camera.cpp.obj: CMakeFiles/out.dir/flags.make
-CMakeFiles/out.dir/src/camera.cpp.obj: CMakeFiles/out.dir/includes_CXX.rsp
-CMakeFiles/out.dir/src/camera.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/camera.cpp
-CMakeFiles/out.dir/src/camera.cpp.obj: CMakeFiles/out.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/out.dir/src/camera.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/out.dir/src/camera.cpp.obj -MF CMakeFiles\out.dir\src\camera.cpp.obj.d -o CMakeFiles\out.dir\src\camera.cpp.obj -c C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\camera.cpp
+CMakeFiles/out.dir/src/Window.cpp.obj: CMakeFiles/out.dir/flags.make
+CMakeFiles/out.dir/src/Window.cpp.obj: CMakeFiles/out.dir/includes_CXX.rsp
+CMakeFiles/out.dir/src/Window.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/Window.cpp
+CMakeFiles/out.dir/src/Window.cpp.obj: CMakeFiles/out.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/out.dir/src/Window.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/out.dir/src/Window.cpp.obj -MF CMakeFiles\out.dir\src\Window.cpp.obj.d -o CMakeFiles\out.dir\src\Window.cpp.obj -c C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\Window.cpp
 
-CMakeFiles/out.dir/src/camera.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/out.dir/src/camera.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\camera.cpp > CMakeFiles\out.dir\src\camera.cpp.i
+CMakeFiles/out.dir/src/Window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/out.dir/src/Window.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\Window.cpp > CMakeFiles\out.dir\src\Window.cpp.i
 
-CMakeFiles/out.dir/src/camera.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/out.dir/src/camera.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\camera.cpp -o CMakeFiles\out.dir\src\camera.cpp.s
+CMakeFiles/out.dir/src/Window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/out.dir/src/Window.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\Window.cpp -o CMakeFiles\out.dir\src\Window.cpp.s
 
 CMakeFiles/out.dir/src/main.cpp.obj: CMakeFiles/out.dir/flags.make
 CMakeFiles/out.dir/src/main.cpp.obj: CMakeFiles/out.dir/includes_CXX.rsp
 CMakeFiles/out.dir/src/main.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/main.cpp
 CMakeFiles/out.dir/src/main.cpp.obj: CMakeFiles/out.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/out.dir/src/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/out.dir/src/main.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/out.dir/src/main.cpp.obj -MF CMakeFiles\out.dir\src\main.cpp.obj.d -o CMakeFiles\out.dir\src\main.cpp.obj -c C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\main.cpp
 
 CMakeFiles/out.dir/src/main.cpp.i: cmake_force
@@ -146,41 +206,11 @@ CMakeFiles/out.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/out.dir/src/main.cpp.s"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\main.cpp -o CMakeFiles\out.dir\src\main.cpp.s
 
-CMakeFiles/out.dir/src/mesh.cpp.obj: CMakeFiles/out.dir/flags.make
-CMakeFiles/out.dir/src/mesh.cpp.obj: CMakeFiles/out.dir/includes_CXX.rsp
-CMakeFiles/out.dir/src/mesh.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/mesh.cpp
-CMakeFiles/out.dir/src/mesh.cpp.obj: CMakeFiles/out.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/out.dir/src/mesh.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/out.dir/src/mesh.cpp.obj -MF CMakeFiles\out.dir\src\mesh.cpp.obj.d -o CMakeFiles\out.dir\src\mesh.cpp.obj -c C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\mesh.cpp
-
-CMakeFiles/out.dir/src/mesh.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/out.dir/src/mesh.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\mesh.cpp > CMakeFiles\out.dir\src\mesh.cpp.i
-
-CMakeFiles/out.dir/src/mesh.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/out.dir/src/mesh.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\mesh.cpp -o CMakeFiles\out.dir\src\mesh.cpp.s
-
-CMakeFiles/out.dir/src/model.cpp.obj: CMakeFiles/out.dir/flags.make
-CMakeFiles/out.dir/src/model.cpp.obj: CMakeFiles/out.dir/includes_CXX.rsp
-CMakeFiles/out.dir/src/model.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/model.cpp
-CMakeFiles/out.dir/src/model.cpp.obj: CMakeFiles/out.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/out.dir/src/model.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/out.dir/src/model.cpp.obj -MF CMakeFiles\out.dir\src\model.cpp.obj.d -o CMakeFiles\out.dir\src\model.cpp.obj -c C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\model.cpp
-
-CMakeFiles/out.dir/src/model.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/out.dir/src/model.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\model.cpp > CMakeFiles\out.dir\src\model.cpp.i
-
-CMakeFiles/out.dir/src/model.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/out.dir/src/model.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\model.cpp -o CMakeFiles\out.dir\src\model.cpp.s
-
 CMakeFiles/out.dir/src/shaderClass.cpp.obj: CMakeFiles/out.dir/flags.make
 CMakeFiles/out.dir/src/shaderClass.cpp.obj: CMakeFiles/out.dir/includes_CXX.rsp
 CMakeFiles/out.dir/src/shaderClass.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/shaderClass.cpp
 CMakeFiles/out.dir/src/shaderClass.cpp.obj: CMakeFiles/out.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/out.dir/src/shaderClass.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/out.dir/src/shaderClass.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/out.dir/src/shaderClass.cpp.obj -MF CMakeFiles\out.dir\src\shaderClass.cpp.obj.d -o CMakeFiles\out.dir\src\shaderClass.cpp.obj -c C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\shaderClass.cpp
 
 CMakeFiles/out.dir/src/shaderClass.cpp.i: cmake_force
@@ -195,7 +225,7 @@ CMakeFiles/out.dir/src/stb.cpp.obj: CMakeFiles/out.dir/flags.make
 CMakeFiles/out.dir/src/stb.cpp.obj: CMakeFiles/out.dir/includes_CXX.rsp
 CMakeFiles/out.dir/src/stb.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/stb.cpp
 CMakeFiles/out.dir/src/stb.cpp.obj: CMakeFiles/out.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/out.dir/src/stb.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/out.dir/src/stb.cpp.obj"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/out.dir/src/stb.cpp.obj -MF CMakeFiles\out.dir\src\stb.cpp.obj.d -o CMakeFiles\out.dir\src\stb.cpp.obj -c C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\stb.cpp
 
 CMakeFiles/out.dir/src/stb.cpp.i: cmake_force
@@ -206,64 +236,34 @@ CMakeFiles/out.dir/src/stb.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/out.dir/src/stb.cpp.s"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\stb.cpp -o CMakeFiles\out.dir\src\stb.cpp.s
 
-CMakeFiles/out.dir/src/texture.cpp.obj: CMakeFiles/out.dir/flags.make
-CMakeFiles/out.dir/src/texture.cpp.obj: CMakeFiles/out.dir/includes_CXX.rsp
-CMakeFiles/out.dir/src/texture.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/texture.cpp
-CMakeFiles/out.dir/src/texture.cpp.obj: CMakeFiles/out.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/out.dir/src/texture.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/out.dir/src/texture.cpp.obj -MF CMakeFiles\out.dir\src\texture.cpp.obj.d -o CMakeFiles\out.dir\src\texture.cpp.obj -c C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\texture.cpp
-
-CMakeFiles/out.dir/src/texture.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/out.dir/src/texture.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\texture.cpp > CMakeFiles\out.dir\src\texture.cpp.i
-
-CMakeFiles/out.dir/src/texture.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/out.dir/src/texture.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\texture.cpp -o CMakeFiles\out.dir\src\texture.cpp.s
-
-CMakeFiles/out.dir/src/window.cpp.obj: CMakeFiles/out.dir/flags.make
-CMakeFiles/out.dir/src/window.cpp.obj: CMakeFiles/out.dir/includes_CXX.rsp
-CMakeFiles/out.dir/src/window.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/window.cpp
-CMakeFiles/out.dir/src/window.cpp.obj: CMakeFiles/out.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/out.dir/src/window.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/out.dir/src/window.cpp.obj -MF CMakeFiles\out.dir\src\window.cpp.obj.d -o CMakeFiles\out.dir\src\window.cpp.obj -c C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\window.cpp
-
-CMakeFiles/out.dir/src/window.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/out.dir/src/window.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\window.cpp > CMakeFiles\out.dir\src\window.cpp.i
-
-CMakeFiles/out.dir/src/window.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/out.dir/src/window.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\window.cpp -o CMakeFiles\out.dir\src\window.cpp.s
-
 # Object files for target out
 out_OBJECTS = \
+"CMakeFiles/out.dir/src/Camera.cpp.obj" \
 "CMakeFiles/out.dir/src/EBO.cpp.obj" \
+"CMakeFiles/out.dir/src/Mesh.cpp.obj" \
+"CMakeFiles/out.dir/src/Model.cpp.obj" \
+"CMakeFiles/out.dir/src/Texture.cpp.obj" \
 "CMakeFiles/out.dir/src/VAO.cpp.obj" \
 "CMakeFiles/out.dir/src/VBO.cpp.obj" \
-"CMakeFiles/out.dir/src/camera.cpp.obj" \
+"CMakeFiles/out.dir/src/Window.cpp.obj" \
 "CMakeFiles/out.dir/src/main.cpp.obj" \
-"CMakeFiles/out.dir/src/mesh.cpp.obj" \
-"CMakeFiles/out.dir/src/model.cpp.obj" \
 "CMakeFiles/out.dir/src/shaderClass.cpp.obj" \
-"CMakeFiles/out.dir/src/stb.cpp.obj" \
-"CMakeFiles/out.dir/src/texture.cpp.obj" \
-"CMakeFiles/out.dir/src/window.cpp.obj"
+"CMakeFiles/out.dir/src/stb.cpp.obj"
 
 # External object files for target out
 out_EXTERNAL_OBJECTS =
 
+C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/Camera.cpp.obj
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/EBO.cpp.obj
+C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/Mesh.cpp.obj
+C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/Model.cpp.obj
+C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/Texture.cpp.obj
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/VAO.cpp.obj
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/VBO.cpp.obj
-C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/camera.cpp.obj
+C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/Window.cpp.obj
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/main.cpp.obj
-C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/mesh.cpp.obj
-C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/model.cpp.obj
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/shaderClass.cpp.obj
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/stb.cpp.obj
-C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/texture.cpp.obj
-C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/window.cpp.obj
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/build.make
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/statLib/libglfw3WIN.a
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/statLib/libgladWIN.a

@@ -1,6 +1,6 @@
-CMakeFiles/out.dir/src/mesh.cpp.obj: \
- C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\mesh.cpp \
- C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/mesh.h \
+CMakeFiles/out.dir/src/Mesh.cpp.obj: \
+ C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\Mesh.cpp \
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/Mesh.h \
  C:/msys64/ucrt64/include/c++/14.2.0/string \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
  C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \

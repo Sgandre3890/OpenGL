@@ -11,14 +11,14 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/EBO.cpp" "CMakeFiles/out.dir/src/EBO.cpp.obj" "gcc" "CMakeFiles/out.dir/src/EBO.cpp.obj.d"
   "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/VAO.cpp" "CMakeFiles/out.dir/src/VAO.cpp.obj" "gcc" "CMakeFiles/out.dir/src/VAO.cpp.obj.d"
   "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/VBO.cpp" "CMakeFiles/out.dir/src/VBO.cpp.obj" "gcc" "CMakeFiles/out.dir/src/VBO.cpp.obj.d"
-  "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/camera.cpp" "CMakeFiles/out.dir/src/camera.cpp.obj" "gcc" "CMakeFiles/out.dir/src/camera.cpp.obj.d"
+  "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/Camera.cpp" "CMakeFiles/out.dir/src/camera.cpp.obj" "gcc" "CMakeFiles/out.dir/src/camera.cpp.obj.d"
   "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/main.cpp" "CMakeFiles/out.dir/src/main.cpp.obj" "gcc" "CMakeFiles/out.dir/src/main.cpp.obj.d"
-  "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/mesh.cpp" "CMakeFiles/out.dir/src/mesh.cpp.obj" "gcc" "CMakeFiles/out.dir/src/mesh.cpp.obj.d"
-  "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/model.cpp" "CMakeFiles/out.dir/src/model.cpp.obj" "gcc" "CMakeFiles/out.dir/src/model.cpp.obj.d"
+  "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/Mesh.cpp" "CMakeFiles/out.dir/src/mesh.cpp.obj" "gcc" "CMakeFiles/out.dir/src/mesh.cpp.obj.d"
+  "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/Model.cpp" "CMakeFiles/out.dir/src/model.cpp.obj" "gcc" "CMakeFiles/out.dir/src/model.cpp.obj.d"
   "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/shaderClass.cpp" "CMakeFiles/out.dir/src/shaderClass.cpp.obj" "gcc" "CMakeFiles/out.dir/src/shaderClass.cpp.obj.d"
   "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/stb.cpp" "CMakeFiles/out.dir/src/stb.cpp.obj" "gcc" "CMakeFiles/out.dir/src/stb.cpp.obj.d"
-  "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/texture.cpp" "CMakeFiles/out.dir/src/texture.cpp.obj" "gcc" "CMakeFiles/out.dir/src/texture.cpp.obj.d"
-  "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/window.cpp" "CMakeFiles/out.dir/src/window.cpp.obj" "gcc" "CMakeFiles/out.dir/src/window.cpp.obj.d"
+  "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/Texture.cpp" "CMakeFiles/out.dir/src/texture.cpp.obj" "gcc" "CMakeFiles/out.dir/src/texture.cpp.obj.d"
+  "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/Window.cpp" "CMakeFiles/out.dir/src/window.cpp.obj" "gcc" "CMakeFiles/out.dir/src/window.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

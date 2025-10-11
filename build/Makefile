@@ -135,6 +135,30 @@ out/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/build
 .PHONY : out/fast
 
+src/Camera.obj: src/Camera.cpp.obj
+.PHONY : src/Camera.obj
+
+# target to build an object file
+src/Camera.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/Camera.cpp.obj
+.PHONY : src/Camera.cpp.obj
+
+src/Camera.i: src/Camera.cpp.i
+.PHONY : src/Camera.i
+
+# target to preprocess a source file
+src/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/Camera.cpp.i
+.PHONY : src/Camera.cpp.i
+
+src/Camera.s: src/Camera.cpp.s
+.PHONY : src/Camera.s
+
+# target to generate assembly for a file
+src/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/Camera.cpp.s
+.PHONY : src/Camera.cpp.s
+
 src/EBO.obj: src/EBO.cpp.obj
 .PHONY : src/EBO.obj
 
@@ -158,6 +182,78 @@ src/EBO.s: src/EBO.cpp.s
 src/EBO.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/EBO.cpp.s
 .PHONY : src/EBO.cpp.s
+
+src/Mesh.obj: src/Mesh.cpp.obj
+.PHONY : src/Mesh.obj
+
+# target to build an object file
+src/Mesh.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/Mesh.cpp.obj
+.PHONY : src/Mesh.cpp.obj
+
+src/Mesh.i: src/Mesh.cpp.i
+.PHONY : src/Mesh.i
+
+# target to preprocess a source file
+src/Mesh.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/Mesh.cpp.i
+.PHONY : src/Mesh.cpp.i
+
+src/Mesh.s: src/Mesh.cpp.s
+.PHONY : src/Mesh.s
+
+# target to generate assembly for a file
+src/Mesh.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/Mesh.cpp.s
+.PHONY : src/Mesh.cpp.s
+
+src/Model.obj: src/Model.cpp.obj
+.PHONY : src/Model.obj
+
+# target to build an object file
+src/Model.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/Model.cpp.obj
+.PHONY : src/Model.cpp.obj
+
+src/Model.i: src/Model.cpp.i
+.PHONY : src/Model.i
+
+# target to preprocess a source file
+src/Model.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/Model.cpp.i
+.PHONY : src/Model.cpp.i
+
+src/Model.s: src/Model.cpp.s
+.PHONY : src/Model.s
+
+# target to generate assembly for a file
+src/Model.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/Model.cpp.s
+.PHONY : src/Model.cpp.s
+
+src/Texture.obj: src/Texture.cpp.obj
+.PHONY : src/Texture.obj
+
+# target to build an object file
+src/Texture.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/Texture.cpp.obj
+.PHONY : src/Texture.cpp.obj
+
+src/Texture.i: src/Texture.cpp.i
+.PHONY : src/Texture.i
+
+# target to preprocess a source file
+src/Texture.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/Texture.cpp.i
+.PHONY : src/Texture.cpp.i
+
+src/Texture.s: src/Texture.cpp.s
+.PHONY : src/Texture.s
+
+# target to generate assembly for a file
+src/Texture.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/Texture.cpp.s
+.PHONY : src/Texture.cpp.s
 
 src/VAO.obj: src/VAO.cpp.obj
 .PHONY : src/VAO.obj
@@ -207,29 +303,29 @@ src/VBO.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/VBO.cpp.s
 .PHONY : src/VBO.cpp.s
 
-src/camera.obj: src/camera.cpp.obj
-.PHONY : src/camera.obj
+src/Window.obj: src/Window.cpp.obj
+.PHONY : src/Window.obj
 
 # target to build an object file
-src/camera.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/camera.cpp.obj
-.PHONY : src/camera.cpp.obj
+src/Window.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/Window.cpp.obj
+.PHONY : src/Window.cpp.obj
 
-src/camera.i: src/camera.cpp.i
-.PHONY : src/camera.i
+src/Window.i: src/Window.cpp.i
+.PHONY : src/Window.i
 
 # target to preprocess a source file
-src/camera.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/camera.cpp.i
-.PHONY : src/camera.cpp.i
+src/Window.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/Window.cpp.i
+.PHONY : src/Window.cpp.i
 
-src/camera.s: src/camera.cpp.s
-.PHONY : src/camera.s
+src/Window.s: src/Window.cpp.s
+.PHONY : src/Window.s
 
 # target to generate assembly for a file
-src/camera.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/camera.cpp.s
-.PHONY : src/camera.cpp.s
+src/Window.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/Window.cpp.s
+.PHONY : src/Window.cpp.s
 
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
@@ -254,54 +350,6 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
-
-src/mesh.obj: src/mesh.cpp.obj
-.PHONY : src/mesh.obj
-
-# target to build an object file
-src/mesh.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/mesh.cpp.obj
-.PHONY : src/mesh.cpp.obj
-
-src/mesh.i: src/mesh.cpp.i
-.PHONY : src/mesh.i
-
-# target to preprocess a source file
-src/mesh.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/mesh.cpp.i
-.PHONY : src/mesh.cpp.i
-
-src/mesh.s: src/mesh.cpp.s
-.PHONY : src/mesh.s
-
-# target to generate assembly for a file
-src/mesh.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/mesh.cpp.s
-.PHONY : src/mesh.cpp.s
-
-src/model.obj: src/model.cpp.obj
-.PHONY : src/model.obj
-
-# target to build an object file
-src/model.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/model.cpp.obj
-.PHONY : src/model.cpp.obj
-
-src/model.i: src/model.cpp.i
-.PHONY : src/model.i
-
-# target to preprocess a source file
-src/model.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/model.cpp.i
-.PHONY : src/model.cpp.i
-
-src/model.s: src/model.cpp.s
-.PHONY : src/model.s
-
-# target to generate assembly for a file
-src/model.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/model.cpp.s
-.PHONY : src/model.cpp.s
 
 src/shaderClass.obj: src/shaderClass.cpp.obj
 .PHONY : src/shaderClass.obj
@@ -351,54 +399,6 @@ src/stb.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/stb.cpp.s
 .PHONY : src/stb.cpp.s
 
-src/texture.obj: src/texture.cpp.obj
-.PHONY : src/texture.obj
-
-# target to build an object file
-src/texture.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/texture.cpp.obj
-.PHONY : src/texture.cpp.obj
-
-src/texture.i: src/texture.cpp.i
-.PHONY : src/texture.i
-
-# target to preprocess a source file
-src/texture.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/texture.cpp.i
-.PHONY : src/texture.cpp.i
-
-src/texture.s: src/texture.cpp.s
-.PHONY : src/texture.s
-
-# target to generate assembly for a file
-src/texture.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/texture.cpp.s
-.PHONY : src/texture.cpp.s
-
-src/window.obj: src/window.cpp.obj
-.PHONY : src/window.obj
-
-# target to build an object file
-src/window.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/window.cpp.obj
-.PHONY : src/window.cpp.obj
-
-src/window.i: src/window.cpp.i
-.PHONY : src/window.i
-
-# target to preprocess a source file
-src/window.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/window.cpp.i
-.PHONY : src/window.cpp.i
-
-src/window.s: src/window.cpp.s
-.PHONY : src/window.s
-
-# target to generate assembly for a file
-src/window.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/window.cpp.s
-.PHONY : src/window.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -409,39 +409,39 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... out
+	@echo ... src/Camera.obj
+	@echo ... src/Camera.i
+	@echo ... src/Camera.s
 	@echo ... src/EBO.obj
 	@echo ... src/EBO.i
 	@echo ... src/EBO.s
+	@echo ... src/Mesh.obj
+	@echo ... src/Mesh.i
+	@echo ... src/Mesh.s
+	@echo ... src/Model.obj
+	@echo ... src/Model.i
+	@echo ... src/Model.s
+	@echo ... src/Texture.obj
+	@echo ... src/Texture.i
+	@echo ... src/Texture.s
 	@echo ... src/VAO.obj
 	@echo ... src/VAO.i
 	@echo ... src/VAO.s
 	@echo ... src/VBO.obj
 	@echo ... src/VBO.i
 	@echo ... src/VBO.s
-	@echo ... src/camera.obj
-	@echo ... src/camera.i
-	@echo ... src/camera.s
+	@echo ... src/Window.obj
+	@echo ... src/Window.i
+	@echo ... src/Window.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
-	@echo ... src/mesh.obj
-	@echo ... src/mesh.i
-	@echo ... src/mesh.s
-	@echo ... src/model.obj
-	@echo ... src/model.i
-	@echo ... src/model.s
 	@echo ... src/shaderClass.obj
 	@echo ... src/shaderClass.i
 	@echo ... src/shaderClass.s
 	@echo ... src/stb.obj
 	@echo ... src/stb.i
 	@echo ... src/stb.s
-	@echo ... src/texture.obj
-	@echo ... src/texture.i
-	@echo ... src/texture.s
-	@echo ... src/window.obj
-	@echo ... src/window.i
-	@echo ... src/window.s
 .PHONY : help
 
 

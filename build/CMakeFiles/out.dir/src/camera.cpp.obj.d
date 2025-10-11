@@ -1,5 +1,5 @@
-CMakeFiles/out.dir/src/camera.cpp.obj: \
- C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\camera.cpp \
+CMakeFiles/out.dir/src/Camera.cpp.obj: \
+ C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\Camera.cpp \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/camera.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glad/glad.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/KHR/khrplatform.h \

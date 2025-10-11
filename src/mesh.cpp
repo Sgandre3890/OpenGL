@@ -1,4 +1,4 @@
-#include "mesh.h"
+#include "Mesh.h"
 
 Mesh::Mesh(std::vector <Vertex>& vertices, std::vector <GLuint>& indices, std::vector <Texture>& textures)
 {
@@ -34,7 +34,7 @@ void Mesh::Draw
 )
 {
 	// Bind shader to be able to access uniforms
-	shader.use();
+	shader.Activate();
 	VAO.Bind();
 
 	// Keep track of how many of each type of textures we have

@@ -1,5 +1,5 @@
-CMakeFiles/out.dir/src/texture.cpp.obj: \
- C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\texture.cpp \
+CMakeFiles/out.dir/src/Texture.cpp.obj: \
+ C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\Texture.cpp \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/Texture.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glad/glad.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/KHR/khrplatform.h \

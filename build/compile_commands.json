@@ -1,9 +1,33 @@
 [
 {
   "directory": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/out.dir/includes_CXX.rsp  -m64 -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\out.dir\\src\\Camera.cpp.obj -c C:\\Users\\sgand\\OneDrive\\Documents\\GitHub\\OpenGL\\src\\Camera.cpp",
+  "file": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/Camera.cpp",
+  "output": "CMakeFiles/out.dir/src/Camera.cpp.obj"
+},
+{
+  "directory": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/build",
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/out.dir/includes_CXX.rsp  -m64 -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\out.dir\\src\\EBO.cpp.obj -c C:\\Users\\sgand\\OneDrive\\Documents\\GitHub\\OpenGL\\src\\EBO.cpp",
   "file": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/EBO.cpp",
   "output": "CMakeFiles/out.dir/src/EBO.cpp.obj"
+},
+{
+  "directory": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/out.dir/includes_CXX.rsp  -m64 -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\out.dir\\src\\Mesh.cpp.obj -c C:\\Users\\sgand\\OneDrive\\Documents\\GitHub\\OpenGL\\src\\Mesh.cpp",
+  "file": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/Mesh.cpp",
+  "output": "CMakeFiles/out.dir/src/Mesh.cpp.obj"
+},
+{
+  "directory": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/out.dir/includes_CXX.rsp  -m64 -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\out.dir\\src\\Model.cpp.obj -c C:\\Users\\sgand\\OneDrive\\Documents\\GitHub\\OpenGL\\src\\Model.cpp",
+  "file": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/Model.cpp",
+  "output": "CMakeFiles/out.dir/src/Model.cpp.obj"
+},
+{
+  "directory": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/out.dir/includes_CXX.rsp  -m64 -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\out.dir\\src\\Texture.cpp.obj -c C:\\Users\\sgand\\OneDrive\\Documents\\GitHub\\OpenGL\\src\\Texture.cpp",
+  "file": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/Texture.cpp",
+  "output": "CMakeFiles/out.dir/src/Texture.cpp.obj"
 },
 {
   "directory": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/build",
@@ -19,27 +43,15 @@
 },
 {
   "directory": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/out.dir/includes_CXX.rsp  -m64 -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\out.dir\\src\\camera.cpp.obj -c C:\\Users\\sgand\\OneDrive\\Documents\\GitHub\\OpenGL\\src\\camera.cpp",
-  "file": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/camera.cpp",
-  "output": "CMakeFiles/out.dir/src/camera.cpp.obj"
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/out.dir/includes_CXX.rsp  -m64 -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\out.dir\\src\\Window.cpp.obj -c C:\\Users\\sgand\\OneDrive\\Documents\\GitHub\\OpenGL\\src\\Window.cpp",
+  "file": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/Window.cpp",
+  "output": "CMakeFiles/out.dir/src/Window.cpp.obj"
 },
 {
   "directory": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/build",
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/out.dir/includes_CXX.rsp  -m64 -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\out.dir\\src\\main.cpp.obj -c C:\\Users\\sgand\\OneDrive\\Documents\\GitHub\\OpenGL\\src\\main.cpp",
   "file": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/main.cpp",
   "output": "CMakeFiles/out.dir/src/main.cpp.obj"
-},
-{
-  "directory": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/out.dir/includes_CXX.rsp  -m64 -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\out.dir\\src\\mesh.cpp.obj -c C:\\Users\\sgand\\OneDrive\\Documents\\GitHub\\OpenGL\\src\\mesh.cpp",
-  "file": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/mesh.cpp",
-  "output": "CMakeFiles/out.dir/src/mesh.cpp.obj"
-},
-{
-  "directory": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/out.dir/includes_CXX.rsp  -m64 -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\out.dir\\src\\model.cpp.obj -c C:\\Users\\sgand\\OneDrive\\Documents\\GitHub\\OpenGL\\src\\model.cpp",
-  "file": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/model.cpp",
-  "output": "CMakeFiles/out.dir/src/model.cpp.obj"
 },
 {
   "directory": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/build",
@@ -52,17 +64,5 @@
   "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/out.dir/includes_CXX.rsp  -m64 -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\out.dir\\src\\stb.cpp.obj -c C:\\Users\\sgand\\OneDrive\\Documents\\GitHub\\OpenGL\\src\\stb.cpp",
   "file": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/stb.cpp",
   "output": "CMakeFiles/out.dir/src/stb.cpp.obj"
-},
-{
-  "directory": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/out.dir/includes_CXX.rsp  -m64 -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\out.dir\\src\\texture.cpp.obj -c C:\\Users\\sgand\\OneDrive\\Documents\\GitHub\\OpenGL\\src\\texture.cpp",
-  "file": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/texture.cpp",
-  "output": "CMakeFiles/out.dir/src/texture.cpp.obj"
-},
-{
-  "directory": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/build",
-  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/out.dir/includes_CXX.rsp  -m64 -O3 -DNDEBUG -std=gnu++17 -o CMakeFiles\\out.dir\\src\\window.cpp.obj -c C:\\Users\\sgand\\OneDrive\\Documents\\GitHub\\OpenGL\\src\\window.cpp",
-  "file": "C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/window.cpp",
-  "output": "CMakeFiles/out.dir/src/window.cpp.obj"
 }
 ]
