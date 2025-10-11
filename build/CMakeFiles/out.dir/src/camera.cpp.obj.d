@@ -275,7 +275,7 @@ CMakeFiles/out.dir/src/camera.cpp.obj: \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glm-0.9.9.7/glm/glm/gtx/norm.inl \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glm-0.9.9.7/glm/glm/gtx/quaternion.inl \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glm-0.9.9.7/glm/glm/gtx/vector_angle.inl \
- C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/shader.h \
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/shaderClass.h \
  C:/msys64/ucrt64/include/c++/14.2.0/string \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/stringfwd.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/memoryfwd.h \

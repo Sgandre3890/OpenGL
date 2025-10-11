@@ -265,7 +265,7 @@ CMakeFiles/out.dir/src/mesh.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/stl_bvector.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/vector.tcc \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/EBO.h \
- C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/camera.h \
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/Camera.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/GLFW/glfw3.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glm-0.9.9.7/glm/glm/gtc/matrix_transform.hpp \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glm-0.9.9.7/glm/glm/ext/matrix_projection.hpp \
@@ -334,7 +334,7 @@ CMakeFiles/out.dir/src/mesh.cpp.obj: \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glm-0.9.9.7/glm/glm/gtx/norm.inl \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glm-0.9.9.7/glm/glm/gtx/quaternion.inl \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glm-0.9.9.7/glm/glm/gtx/vector_angle.inl \
- C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/shader.h \
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/shaderClass.h \
  C:/msys64/ucrt64/include/c++/14.2.0/fstream \
  C:/msys64/ucrt64/include/c++/14.2.0/istream \
  C:/msys64/ucrt64/include/c++/14.2.0/ios \
@@ -385,6 +385,5 @@ CMakeFiles/out.dir/src/mesh.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/sstream \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/sstream.tcc \
  C:/msys64/ucrt64/include/c++/14.2.0/iostream \
- C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/texture.h \
- C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/stb/stb_image.h \
- C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/window.h
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/Texture.h \
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/stb/stb_image.h

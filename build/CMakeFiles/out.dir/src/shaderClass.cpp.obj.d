@@ -1,6 +1,6 @@
-CMakeFiles/out.dir/src/texture.cpp.obj: \
- C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\texture.cpp \
- C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/Texture.h \
+CMakeFiles/out.dir/src/shaderClass.cpp.obj: \
+ C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\shaderClass.cpp \
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/shaderClass.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glad/glad.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/KHR/khrplatform.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stdint.h \
@@ -12,38 +12,23 @@ CMakeFiles/out.dir/src/texture.cpp.obj: \
  C:/msys64/ucrt64/include/sdks/_mingw_ddk.h \
  C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/stddef.h \
  C:/msys64/ucrt64/include/stddef.h \
- C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/stb/stb_image.h \
- C:/msys64/ucrt64/include/stdio.h \
- C:/msys64/ucrt64/include/corecrt_stdio_config.h \
- C:/msys64/ucrt64/include/_mingw_off_t.h \
- C:/msys64/ucrt64/include/swprintf.inl \
- C:/msys64/ucrt64/include/sec_api/stdio_s.h \
- C:/msys64/ucrt64/include/c++/14.2.0/stdlib.h \
- C:/msys64/ucrt64/include/c++/14.2.0/cstdlib \
+ C:/msys64/ucrt64/include/c++/14.2.0/string \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
  C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/os_defines.h \
  C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
  C:/msys64/ucrt64/include/c++/14.2.0/pstl/pstl_config.h \
- C:/msys64/ucrt64/include/stdlib.h \
- C:/msys64/ucrt64/include/corecrt_wstdlib.h \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
- C:/msys64/ucrt64/include/limits.h \
- C:/msys64/ucrt64/include/sec_api/stdlib_s.h \
- C:/msys64/ucrt64/include/malloc.h \
- C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
- C:/msys64/ucrt64/include/errno.h \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/std_abs.h \
- C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/shaderClass.h \
- C:/msys64/ucrt64/include/c++/14.2.0/string \
- C:/msys64/ucrt64/include/c++/14.2.0/bits/requires_hosted.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/stringfwd.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/memoryfwd.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/char_traits.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/postypes.h \
  C:/msys64/ucrt64/include/c++/14.2.0/cwchar \
  C:/msys64/ucrt64/include/wchar.h \
+ C:/msys64/ucrt64/include/corecrt_stdio_config.h \
+ C:/msys64/ucrt64/include/corecrt_wstdlib.h \
+ C:/msys64/ucrt64/include/_mingw_off_t.h \
  C:/msys64/ucrt64/include/_mingw_stat64.h \
+ C:/msys64/ucrt64/include/swprintf.inl \
  C:/msys64/ucrt64/include/sec_api/wchar_s.h \
  C:/msys64/ucrt64/include/c++/14.2.0/type_traits \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/version.h \
@@ -59,7 +44,8 @@ CMakeFiles/out.dir/src/texture.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/localefwd.h \
  C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/c++locale.h \
  C:/msys64/ucrt64/include/c++/14.2.0/clocale \
- C:/msys64/ucrt64/include/locale.h \
+ C:/msys64/ucrt64/include/locale.h C:/msys64/ucrt64/include/stdio.h \
+ C:/msys64/ucrt64/include/sec_api/stdio_s.h \
  C:/msys64/ucrt64/include/c++/14.2.0/iosfwd \
  C:/msys64/ucrt64/include/c++/14.2.0/cctype \
  C:/msys64/ucrt64/include/ctype.h \
@@ -95,6 +81,17 @@ CMakeFiles/out.dir/src/texture.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/hash_bytes.h \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/string_view.tcc \
  C:/msys64/ucrt64/include/c++/14.2.0/ext/string_conversions.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/cstdlib \
+ C:/msys64/ucrt64/include/stdlib.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/limits.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/syslimits.h \
+ C:/msys64/ucrt64/include/limits.h \
+ C:/msys64/ucrt64/include/sec_api/stdlib_s.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/stdlib.h \
+ C:/msys64/ucrt64/include/malloc.h \
+ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/14.2.0/include/mm_malloc.h \
+ C:/msys64/ucrt64/include/errno.h \
+ C:/msys64/ucrt64/include/c++/14.2.0/bits/std_abs.h \
  C:/msys64/ucrt64/include/c++/14.2.0/cstdio \
  C:/msys64/ucrt64/include/c++/14.2.0/cerrno \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/charconv.h \

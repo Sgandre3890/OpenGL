@@ -225,7 +225,7 @@ CMakeFiles/out.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/ostream \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/ostream.tcc \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/istream.tcc \
- C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/mesh.h \
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/Mesh.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/VAO.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glad/glad.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/KHR/khrplatform.h \
@@ -368,7 +368,7 @@ CMakeFiles/out.dir/src/main.cpp.obj: \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glm-0.9.9.7/glm/glm/integer.hpp \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glm-0.9.9.7/glm/glm/detail/func_integer.inl \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/EBO.h \
- C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/camera.h \
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/Camera.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/GLFW/glfw3.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glm-0.9.9.7/glm/glm/gtc/matrix_transform.hpp \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glm-0.9.9.7/glm/glm/ext/matrix_projection.hpp \
@@ -434,7 +434,7 @@ CMakeFiles/out.dir/src/main.cpp.obj: \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glm-0.9.9.7/glm/glm/gtx/norm.inl \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glm-0.9.9.7/glm/glm/gtx/quaternion.inl \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/glm-0.9.9.7/glm/glm/gtx/vector_angle.inl \
- C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/shader.h \
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/shaderClass.h \
  C:/msys64/ucrt64/include/c++/14.2.0/fstream \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/codecvt.h \
  C:/msys64/ucrt64/include/c++/14.2.0/x86_64-w64-mingw32/bits/basic_file.h \
@@ -443,6 +443,6 @@ CMakeFiles/out.dir/src/main.cpp.obj: \
  C:/msys64/ucrt64/include/c++/14.2.0/sstream \
  C:/msys64/ucrt64/include/c++/14.2.0/bits/sstream.tcc \
  C:/msys64/ucrt64/include/c++/14.2.0/iostream \
- C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/texture.h \
+ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/Texture.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/stb/stb_image.h \
  C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/include/headers/window.h

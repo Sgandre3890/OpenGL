@@ -248,7 +248,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/shader.cpp",
+			"path" : "src/shaderClass.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

@@ -303,29 +303,29 @@ src/model.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/model.cpp.s
 .PHONY : src/model.cpp.s
 
-src/shader.obj: src/shader.cpp.obj
-.PHONY : src/shader.obj
+src/shaderClass.obj: src/shaderClass.cpp.obj
+.PHONY : src/shaderClass.obj
 
 # target to build an object file
-src/shader.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/shader.cpp.obj
-.PHONY : src/shader.cpp.obj
+src/shaderClass.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/shaderClass.cpp.obj
+.PHONY : src/shaderClass.cpp.obj
 
-src/shader.i: src/shader.cpp.i
-.PHONY : src/shader.i
+src/shaderClass.i: src/shaderClass.cpp.i
+.PHONY : src/shaderClass.i
 
 # target to preprocess a source file
-src/shader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/shader.cpp.i
-.PHONY : src/shader.cpp.i
+src/shaderClass.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/shaderClass.cpp.i
+.PHONY : src/shaderClass.cpp.i
 
-src/shader.s: src/shader.cpp.s
-.PHONY : src/shader.s
+src/shaderClass.s: src/shaderClass.cpp.s
+.PHONY : src/shaderClass.s
 
 # target to generate assembly for a file
-src/shader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/shader.cpp.s
-.PHONY : src/shader.cpp.s
+src/shaderClass.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\out.dir\build.make CMakeFiles/out.dir/src/shaderClass.cpp.s
+.PHONY : src/shaderClass.cpp.s
 
 src/stb.obj: src/stb.cpp.obj
 .PHONY : src/stb.obj
@@ -430,9 +430,9 @@ help:
 	@echo ... src/model.obj
 	@echo ... src/model.i
 	@echo ... src/model.s
-	@echo ... src/shader.obj
-	@echo ... src/shader.i
-	@echo ... src/shader.s
+	@echo ... src/shaderClass.obj
+	@echo ... src/shaderClass.i
+	@echo ... src/shaderClass.s
 	@echo ... src/stb.obj
 	@echo ... src/stb.i
 	@echo ... src/stb.s

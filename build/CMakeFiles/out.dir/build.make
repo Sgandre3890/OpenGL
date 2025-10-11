@@ -176,20 +176,20 @@ CMakeFiles/out.dir/src/model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/out.dir/src/model.cpp.s"
 	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\model.cpp -o CMakeFiles\out.dir\src\model.cpp.s
 
-CMakeFiles/out.dir/src/shader.cpp.obj: CMakeFiles/out.dir/flags.make
-CMakeFiles/out.dir/src/shader.cpp.obj: CMakeFiles/out.dir/includes_CXX.rsp
-CMakeFiles/out.dir/src/shader.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/shader.cpp
-CMakeFiles/out.dir/src/shader.cpp.obj: CMakeFiles/out.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/out.dir/src/shader.cpp.obj"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/out.dir/src/shader.cpp.obj -MF CMakeFiles\out.dir\src\shader.cpp.obj.d -o CMakeFiles\out.dir\src\shader.cpp.obj -c C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\shader.cpp
+CMakeFiles/out.dir/src/shaderClass.cpp.obj: CMakeFiles/out.dir/flags.make
+CMakeFiles/out.dir/src/shaderClass.cpp.obj: CMakeFiles/out.dir/includes_CXX.rsp
+CMakeFiles/out.dir/src/shaderClass.cpp.obj: C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/src/shaderClass.cpp
+CMakeFiles/out.dir/src/shaderClass.cpp.obj: CMakeFiles/out.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/out.dir/src/shaderClass.cpp.obj"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/out.dir/src/shaderClass.cpp.obj -MF CMakeFiles\out.dir\src\shaderClass.cpp.obj.d -o CMakeFiles\out.dir\src\shaderClass.cpp.obj -c C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\shaderClass.cpp
 
-CMakeFiles/out.dir/src/shader.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/out.dir/src/shader.cpp.i"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\shader.cpp > CMakeFiles\out.dir\src\shader.cpp.i
+CMakeFiles/out.dir/src/shaderClass.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/out.dir/src/shaderClass.cpp.i"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\shaderClass.cpp > CMakeFiles\out.dir\src\shaderClass.cpp.i
 
-CMakeFiles/out.dir/src/shader.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/out.dir/src/shader.cpp.s"
-	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\shader.cpp -o CMakeFiles\out.dir\src\shader.cpp.s
+CMakeFiles/out.dir/src/shaderClass.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/out.dir/src/shaderClass.cpp.s"
+	C:\msys64\ucrt64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sgand\OneDrive\Documents\GitHub\OpenGL\src\shaderClass.cpp -o CMakeFiles\out.dir\src\shaderClass.cpp.s
 
 CMakeFiles/out.dir/src/stb.cpp.obj: CMakeFiles/out.dir/flags.make
 CMakeFiles/out.dir/src/stb.cpp.obj: CMakeFiles/out.dir/includes_CXX.rsp
@@ -245,7 +245,7 @@ out_OBJECTS = \
 "CMakeFiles/out.dir/src/main.cpp.obj" \
 "CMakeFiles/out.dir/src/mesh.cpp.obj" \
 "CMakeFiles/out.dir/src/model.cpp.obj" \
-"CMakeFiles/out.dir/src/shader.cpp.obj" \
+"CMakeFiles/out.dir/src/shaderClass.cpp.obj" \
 "CMakeFiles/out.dir/src/stb.cpp.obj" \
 "CMakeFiles/out.dir/src/texture.cpp.obj" \
 "CMakeFiles/out.dir/src/window.cpp.obj"
@@ -260,7 +260,7 @@ C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/main.cpp.obj
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/mesh.cpp.obj
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/model.cpp.obj
-C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/shader.cpp.obj
+C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/shaderClass.cpp.obj
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/stb.cpp.obj
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/texture.cpp.obj
 C:/Users/sgand/OneDrive/Documents/GitHub/OpenGL/out.exe: CMakeFiles/out.dir/src/window.cpp.obj
